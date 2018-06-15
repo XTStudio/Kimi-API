@@ -36,12 +36,15 @@ You use UIKit framework to display User Interface on device.
 
 ### Structs
 
+```
 Rect = {x: number, y: number, width: number, height: number}
 Point = {x: number, y: number}
 AffineTransform = {a: number, b: number, c: number, d: number, tx: number, ty: number}
+```
 
 ### UIView
 
+```
 // Boxing
 frame: Rect
 bounds: Rect
@@ -80,6 +83,7 @@ hidden: boolean
 contentMode: number
 tintColor: UIColor
 tintColorDidChange(): void
+```
 
 ### UIColor
 
