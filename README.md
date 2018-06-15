@@ -36,7 +36,7 @@ You use UIKit framework to display User Interface on device.
 
 ### Structs
 
-```
+```typescript
 Rect = {x: number, y: number, width: number, height: number}
 Point = {x: number, y: number}
 AffineTransform = {a: number, b: number, c: number, d: number, tx: number, ty: number}
@@ -44,7 +44,7 @@ AffineTransform = {a: number, b: number, c: number, d: number, tx: number, ty: n
 
 ### UIView
 
-```
+```typescript
 // Boxing
 frame: Rect
 bounds: Rect
