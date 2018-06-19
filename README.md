@@ -30,6 +30,19 @@ Structs means interface.
 
 You use Foundation framework manage I/O things, such as Networking / File / Data jobs.
 
+### DispatchQueue
+
+You use ```DispatchQueue``` as timer, async task creater, etc.
+
+```typescript
+
+static main: DispatchQueue
+constructor(identifier: string?): DispatchQueue
+async(asyncBlock: () => void): void
+asyncAfter(delayInSeconds: number, asyncBlock: () => void): void
+
+```
+
 ## UIKit
 
 You use UIKit framework to display User Interface on device.
@@ -45,6 +58,10 @@ AffineTransform = {a: number, b: number, c: number, d: number, tx: number, ty: n
 ### UIView
 
 ```typescript
+
+// Constructors
+constructor(): UIView
+
 // Boxing
 frame: Rect
 bounds: Rect
@@ -85,7 +102,18 @@ tintColor: UIColor
 tintColorDidChange(): void
 ```
 
+### UIAnimator
+
+static shared: UIAnimator
+linear(duration: number, animations: () => void, completion?: (finished: boolean) => void): void
+spring(tension: number, friction: number, animations: () => void, completion?: () => void): void
+
 ### UIColor
+
+```
+// Constructors
+constructor(r: number, g: number, b: number, a: number): UIColor
+```
 
 ## CoreGraphics
 
