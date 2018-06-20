@@ -60,8 +60,8 @@ transform: AffineTransform
 
 // Hierarchy
 tag: number = 0
-superview: UIView?
-subviews: UIView[]
+readonly superview: UIView?
+readonly subviews: UIView[]
 removeFromSuperview(): void
 insertSubviewAtIndex(view: UIView, index: number): void
 exchangeSubview(index1: number, index2: number): void
@@ -111,9 +111,9 @@ spring(tension: number, friction: number, animations: () => void, completion?: (
 ### UIGestureRecognizer
 
 ```typescript
-state: UIGestureRecognizerState
+readonly state: UIGestureRecognizerState
 enabled: boolean
-view: UIView?
+readonly view: UIView?
 requiresExclusiveTouchType: boolean
 requireGestureRecognizerToFail(otherGestureRecognizer: UIGestureRecognizer): void
 locationInView(view: UIView): Point
@@ -138,7 +138,56 @@ enum {
 
 numberOfTapsRequired: number = 1
 numberOfTouchesRequired: number = 1
-on('touch', () => void): void
+on('touch', (sender: UITapGestureRecognizer) => void): void
+```
+
+### UILongPressGestureRecognizer: UIGestureRecognizer
+
+```typescript
+numberOfTapsRequired: number = 0
+numberOfTouchesRequired: number = 1
+minimumPressDuration: number = 0.5
+allowableMovement: number = 10
+on('began', (sender: UILongPressGestureRecognizer) => void): void
+on('changed', (sender: UILongPressGestureRecognizer) => void): void
+on('ended', (sender: UILongPressGestureRecognizer) => void): void
+on('cancelled', (sender: UILongPressGestureRecognizer) => void): void
+```
+
+### UIPanGestureRecognizer: UIGestureRecognizer
+
+```typescript
+minimumNumberOfTouches: number = 1
+maximumNumberOfTouches: number = Infinite
+translationInView:(view: UIView?): Point
+setTranslation:(translate: Point, inView: UIView?): void
+velocityInView:(view: UIView?): Point
+on('began', (sender: UIPanGestureRecognizer) => void): void
+on('changed', (sender: UIPanGestureRecognizer) => void): void
+on('ended', (sender: UIPanGestureRecognizer) => void): void
+on('cancelled', (sender: UIPanGestureRecognizer) => void): void
+```
+
+### UIPinchGestureRecognizer: UIGestureRecognizer
+
+```typescript
+scale: number
+readonly velocity: number
+on('began', (sender: UIPinchGestureRecognizer) => void): void
+on('changed', (sender: UIPinchGestureRecognizer) => void): void
+on('ended', (sender: UIPinchGestureRecognizer) => void): void
+on('cancelled', (sender: UIPinchGestureRecognizer) => void): void
+```
+
+### UIRotationGestureRecognizer: UIGestureRecognizer
+
+```typescript
+rotation: number
+readonly velocity: number
+on('began', (sender: UIPinchGestureRecognizer) => void): void
+on('changed', (sender: UIPinchGestureRecognizer) => void): void
+on('ended', (sender: UIPinchGestureRecognizer) => void): void
+on('cancelled', (sender: UIPinchGestureRecognizer) => void): void
 ```
 
 ### UIColor
