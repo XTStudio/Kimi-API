@@ -122,13 +122,13 @@ locationInView(view: UIView): Point
 ### UIGestureRecognizerState
 
 ```typescript
-enum {
-  Possible
-  Began
-  Changed
-  Ended
-  Cancelled
-  Failed
+enum UIGestureRecognizerState {
+  possible
+  negan
+  changed
+  ended
+  cancelled
+  failed
 }
 ```
 
