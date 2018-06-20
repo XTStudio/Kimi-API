@@ -12,23 +12,9 @@ Kimi including following framework subsets now.
 
 All objects extends [EventEmitter](https://github.com/Olical/EventEmitter), that means you could listen via EventEmitter, and emit event to objects.
 
-## Definitions
+## NO Null
 
-All defines as TypeScript typings excepts followings.
-
-### kill null 
-
-Will NEVER deliver and receive ```null``` object.
-
-### ? means optional
-
-eg ```superview: UIView?``` means superview property may return ```undefined``` result.
-
-eg ```willMoveToSuperview(superview: UIView?)``` means superview maybe ```undefined```.
-
-### Structs
-
-Structs means interface.
+Kimi will not accept null as argument and return value, optional value will be ```undefined```.
 
 ## Foundation
 
@@ -51,7 +37,7 @@ asyncAfter(delayInSeconds: number, asyncBlock: () => void): void
 
 You use UIKit framework to display User Interface on device.
 
-### Structs
+### Interface
 
 ```typescript
 Rect = {x: number, y: number, width: number, height: number}
