@@ -184,10 +184,10 @@ on('cancelled', (sender: UIPinchGestureRecognizer) => void): void
 ```typescript
 rotation: number
 readonly velocity: number
-on('began', (sender: UIPinchGestureRecognizer) => void): void
-on('changed', (sender: UIPinchGestureRecognizer) => void): void
-on('ended', (sender: UIPinchGestureRecognizer) => void): void
-on('cancelled', (sender: UIPinchGestureRecognizer) => void): void
+on('began', (sender: UIRotationGestureRecognizer) => void): void
+on('changed', (sender: UIRotationGestureRecognizer) => void): void
+on('ended', (sender: UIRotationGestureRecognizer) => void): void
+on('cancelled', (sender: UIRotationGestureRecognizer) => void): void
 ```
 
 ### UIColor
