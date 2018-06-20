@@ -124,7 +124,7 @@ locationInView(view: UIView): Point
 ```typescript
 enum UIGestureRecognizerState {
   possible
-  negan
+  began
   changed
   ended
   cancelled
