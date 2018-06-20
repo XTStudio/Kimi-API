@@ -8,6 +8,10 @@ Kimi including following framework subsets now.
 * UIKit
 * CoreGraphics
 
+## EventEmitter
+
+All objects extends [EventEmitter](https://github.com/Olical/EventEmitter), that means you could listen via EventEmitter, and emit event to objects.
+
 ## Definitions
 
 All defines as TypeScript typings excepts followings.
@@ -62,13 +66,14 @@ AffineTransform = {a: number, b: number, c: number, d: number, tx: number, ty: n
 // Constructors
 constructor(): UIView
 
-// Boxing
+// Geometry
 frame: Rect
 bounds: Rect
 center: Point
 transform: AffineTransform
 
-// Actions
+// Hierarchy
+tag: number = 0
 superview: UIView?
 subviews: UIView[]
 removeFromSuperview(): void
@@ -100,6 +105,13 @@ hidden: boolean
 contentMode: number
 tintColor: UIColor
 tintColorDidChange(): void
+
+// GestureRecognizers
+userInteractionEnabled: boolean
+gestureRecognizers: UIGestureRecognizer[]
+addGestureRecognizer(gestureRecognizer: UIGestureRecognizer): void
+removeGestureRecognizer(gestureRecognizer: UIGestureRecognizer): void
+
 ```
 
 ### UIAnimator
@@ -108,6 +120,39 @@ tintColorDidChange(): void
 static shared: UIAnimator
 linear(duration: number, animations: () => void, completion?: (finished: boolean) => void): void
 spring(tension: number, friction: number, animations: () => void, completion?: () => void): void
+```
+
+### UIGestureRecognizer
+
+```typescript
+state: UIGestureRecognizerState
+enabled: boolean
+view: UIView?
+requiresExclusiveTouchType: boolean
+requireGestureRecognizerToFail(otherGestureRecognizer: UIGestureRecognizer): void
+locationInView(view: UIView): Point
+```
+
+### UIGestureRecognizerState
+
+```typescript
+enum {
+  Possible
+  Began
+  Changed
+  Ended
+  Cancelled
+  Failed
+}
+```
+
+### UITapGestureRecognizer: UIGestureRecognizer
+
+```typescript
+
+numberOfTapsRequired: number = 1
+numberOfTouchesRequired: number = 1
+on('touch', () => void): void
 ```
 
 ### UIColor
