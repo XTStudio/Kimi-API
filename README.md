@@ -27,7 +27,7 @@ You use ```DispatchQueue``` as timer, async task creater, etc.
 ```typescript
 
 static main: DispatchQueue
-constructor(identifier: string?): DispatchQueue
+constructor(identifier?: string): DispatchQueue
 async(asyncBlock: () => void): void
 asyncAfter(delayInSeconds: number, asyncBlock: () => void): void
 
@@ -62,7 +62,7 @@ transform: AffineTransform
 
 // Hierarchy
 tag: number = 0
-readonly superview: UIView?
+readonly superview: UIView | undefined
 readonly subviews: UIView[]
 removeFromSuperview(): void
 insertSubviewAtIndex(view: UIView, index: number): void
@@ -73,7 +73,7 @@ insertSubviewAboveSubview(view: UIView, aboveSubview: UIView): void
 bringSubviewToFront(view: UIView): void
 sendSubviewToBack(view: UIView): void
 isDescendantOfView(view: UIView): boolean
-viewWithTag(tag: number): UIView?
+viewWithTag(tag: number): UIView | undefined
 
 // Delegates
 didAddSubview(subview: UIView): void
@@ -87,10 +87,10 @@ layoutSubviews(): void
 // Rendering
 setNeedsDisplay(): void
 clipsToBounds: boolean
-backgroundColor: UIColor?
+backgroundColor: UIColor | undefined
 alpha: number
 hidden: boolean
-contentMode: number
+contentMode: UIViewContentMode
 tintColor: UIColor
 tintColorDidChange(): void
 
@@ -100,6 +100,16 @@ gestureRecognizers: UIGestureRecognizer[]
 addGestureRecognizer(gestureRecognizer: UIGestureRecognizer): void
 removeGestureRecognizer(gestureRecognizer: UIGestureRecognizer): void
 
+```
+
+### UIViewContentMode
+
+```typescript
+enum UIViewContentMode {
+  scaleToFill
+  scaleAspectFit
+  scaleAspectFill
+}
 ```
 
 ### UIAnimator
@@ -115,7 +125,7 @@ spring(tension: number, friction: number, animations: () => void, completion?: (
 ```typescript
 readonly state: UIGestureRecognizerState
 enabled: boolean
-readonly view: UIView?
+readonly view: UIView | undefined
 requiresExclusiveTouchType: boolean
 requireGestureRecognizerToFail(otherGestureRecognizer: UIGestureRecognizer): void
 locationInView(view: UIView): Point
@@ -161,9 +171,9 @@ on('cancelled', (sender: UILongPressGestureRecognizer) => void): void
 ```typescript
 minimumNumberOfTouches: number = 1
 maximumNumberOfTouches: number = Infinite
-translationInView:(view: UIView?): Point
-setTranslation:(translate: Point, inView: UIView?): void
-velocityInView:(view: UIView?): Point
+translationInView:(view?: UIView): Point
+setTranslation:(translate: Point, inView?: UIView): void
+velocityInView:(view?: UIView): Point
 on('began', (sender: UIPanGestureRecognizer) => void): void
 on('changed', (sender: UIPanGestureRecognizer) => void): void
 on('ended', (sender: UIPanGestureRecognizer) => void): void
@@ -201,7 +211,7 @@ constructor(r: number, g: number, b: number, a: number): UIColor
 ### UIButton: UIView
 
 ```typescript
-constructor(isCustom: boolean? = false)
+constructor(isCustom?: boolean = false)
 enabled: boolean
 selected: boolean
 readonly highlighted: boolean
@@ -268,6 +278,30 @@ constructor(pointSize: number,
             fontName?: string)
 ```
 
+### UIImageView: UIView
+
+```typescript
+image?: UIImage
+```
+
+### UIImage
+
+```typescript
+constructor({name?: string, base64?: string, renderingMode?: UIImageRenderingMode})
+readonly size: Size
+readonly scale: number
+```
+
+### UIImageRenderingMode
+
+```typescript
+enum UIImageRenderingMode {
+  automatic
+  alwaysOriginal
+  alwaysTemplate
+}
+```
+
 ## CoreGraphics
 
 ### CALayer
@@ -276,7 +310,7 @@ constructor(pointSize: number,
 // Geometry
 frame: Rect
 // Hierarchy
-readonly superlayer: CALayer?
+readonly superlayer: CALayer | undefined
 removeFromSuperlayer(): void
 readonly sublayers: CALayer[]
 addSublayer(layer: CALayer): void
@@ -286,14 +320,14 @@ insertSublayerAbove(layer: CALayer, above: CALayer): void
 replaceSublayer(layer: CALayer, layer2: CALayer): void
 // Rendering
 hidden: boolean
-mask: CALayer?
+mask: CALayer | undefined
 masksToBounds: boolean
-backgroundColor: UIColor?
+backgroundColor: UIColor | undefined
 cornerRadius: number
 borderWidth: number
-borderColor: UIColor?
+borderColor: UIColor | undefined
 opacity: number
-shadowColor: UIColor?
+shadowColor: UIColor | undefined
 shadowOpacity: number
 shadowOffset: Size
 shadowRadius: number
