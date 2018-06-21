@@ -303,6 +303,40 @@ enum UIImageRenderingMode {
 }
 ```
 
+### UILabel: UIView
+
+```typescript
+text: string | undefined
+font: UIFont | undefined
+textColor: UIColor | undefined
+textAlignment: UITextAlignment
+lineBreakMode: UILineBreakMode
+numberOfLines: number
+```
+
+### UITextAlignment
+
+```typescript
+enum UITextAlignment {
+  left
+  center
+  right
+}
+```
+
+### UILineBreakMode
+
+```typescript
+enum UILineBreakMode {
+  wordWrapping
+  charWrapping
+  clipping
+  truncatingHead
+  truncatingTail
+  truncatingMiddle
+}
+```
+
 ## CoreGraphics
 
 ### CALayer
