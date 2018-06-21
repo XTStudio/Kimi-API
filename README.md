@@ -51,6 +51,7 @@ AffineTransform = {a: number, b: number, c: number, d: number, tx: number, ty: n
 
 // Constructors
 constructor(): UIView
+readonly layer: CALayer
 
 // Geometry
 frame: Rect
@@ -197,4 +198,33 @@ constructor(r: number, g: number, b: number, a: number): UIColor
 ```
 
 ## CoreGraphics
+
+### CALayer
+
+```typescript
+// Geometry
+frame: Rect
+// Hierarchy
+readonly superlayer: CALayer?
+removeFromSuperlayer(): void
+readonly sublayers: CALayer[]
+addSublayer(layer: CALayer): void
+insertSublayerAtIndex(layer: CALayer, index: number): void
+insertSublayerBelow(layer: CALayer, below: CALayer): void
+insertSublayerAbove(layer: CALayer, above: CALayer): void
+replaceSublayer(layer: CALayer, layer2: CALayer): void
+// Rendering
+hidden: boolean
+mask: CALayer?
+masksToBounds: boolean
+backgroundColor: UIColor?
+cornerRadius: number
+borderWidth: number
+borderColor: UIColor?
+opacity: number
+shadowColor: UIColor?
+shadowOpacity: number
+shadowOffset: Size
+shadowRadius: number
+```
 
