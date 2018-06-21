@@ -43,6 +43,7 @@ You use UIKit framework to display User Interface on device.
 Rect = {x: number, y: number, width: number, height: number}
 Point = {x: number, y: number}
 AffineTransform = {a: number, b: number, c: number, d: number, tx: number, ty: number}
+EdgeInsets = {top: number, left: number, bottom: number, right: number}
 ```
 
 ### UIView
@@ -195,6 +196,76 @@ on('cancelled', (sender: UIRotationGestureRecognizer) => void): void
 
 ```typescript
 constructor(r: number, g: number, b: number, a: number): UIColor
+```
+
+### UIButton: UIView
+
+```typescript
+constructor(isCustom: boolean? = false)
+enabled: boolean
+selected: boolean
+readonly highlighted: boolean
+readonly tracking: boolean
+readonly touchInside: boolean
+contentVerticalAlignment: UIControlContentVerticalAlignment
+contentHorizontalAlignment: UIControlContentHorizontalAlignment
+setTitle(title?: string, state: UIControlState): void
+setTitleColor(color?: UIColor, state: UIControlState): void
+setTitleFont(font: UIFont): void
+setImage(image?: UIImage, state: UIControlState): void
+contentEdgeInsets: EdgeInsets
+titleEdgeInsets: EdgeInsets
+imageEdgeInsets: EdgeInsets
+on('touchDown', (sender: UIButton) => void): void
+on('touchDownRepeat', (sender: UIButton) => void): void
+on('touchDragInside', (sender: UIButton) => void): void
+on('touchDragOutside', (sender: UIButton) => void): void
+on('touchDragEnter', (sender: UIButton) => void): void
+on('touchDragExit', (sender: UIButton) => void): void
+on('touchUpInside', (sender: UIButton) => void): void
+on('touchUpOutside', (sender: UIButton) => void): void
+on('touchCancel', (sender: UIButton) => void): void
+```
+
+### UIControlState
+
+```typescript
+enum options UIControlState {
+  normal,
+  highlighted,
+  disabled,
+  selected,
+}
+```
+
+### UIControlContentVerticalAlignment
+
+```typescript
+enum UIControlContentVerticalAlignment {
+  center,
+  top,
+  bottom,
+  fill,
+}
+```
+
+### UIControlContentHorizontalAlignment
+
+```typescript
+enum UIControlContentVerticalAlignment {
+  center,
+  left,
+  right,
+  fill,
+}
+```
+
+### UIFont
+
+```typescript
+constructor(pointSize: number, 
+            fontStyle?: "thin" | "light" | "regular" | "medium" | "bold" | "heavy" | "black" | "italic",
+            fontName?: string)
 ```
 
 ## CoreGraphics
