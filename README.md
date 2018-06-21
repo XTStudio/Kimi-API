@@ -42,6 +42,7 @@ You use UIKit framework to display User Interface on device.
 ```typescript
 Rect = {x: number, y: number, width: number, height: number}
 Point = {x: number, y: number}
+Size = {width: number, height: number}
 AffineTransform = {a: number, b: number, c: number, d: number, tx: number, ty: number}
 EdgeInsets = {top: number, left: number, bottom: number, right: number}
 ```
