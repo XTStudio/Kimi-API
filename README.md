@@ -337,6 +337,36 @@ enum UILineBreakMode {
 }
 ```
 
+### UITextField: UIView
+
+```typescript
+text: string | undefined
+textColor: UIColor | undefined
+font: UIFont | undefined
+textAlignment: UITextAlignment
+placeholder: string | undefined
+clearsOnBeginEditing: boolean
+readonly editing: boolean
+clearButtonMode: UITextFieldViewMode
+leftView: UIView | undefined
+leftViewMode: UITextFieldViewMode
+rightView: UIView | undefined
+rightViewMode: UITextFieldViewMode
+clearsOnInsertion: boolean 
+on('should')
+```
+
+### UITextFieldViewMode
+
+```typescript
+enum UITextFieldViewMode {
+  never
+  whileEditing
+  unlessEditing
+  always
+}
+```
+
 ## CoreGraphics
 
 ### CALayer
