@@ -341,6 +341,7 @@ enum UILineBreakMode {
 ### UITextField: UIView
 
 ```typescript
+// TextField
 text: string | undefined
 textColor: UIColor | undefined
 font: UIFont | undefined
@@ -354,6 +355,14 @@ leftViewMode: UITextFieldViewMode
 rightView: UIView | undefined
 rightViewMode: UITextFieldViewMode
 clearsOnInsertion: boolean 
+// TextInputTraits
+autocapitalizationType: UITextAutocapitalizationType
+autocorrectionType: UITextAutocorrectionType
+spellCheckingType: UITextSpellCheckingType
+keyboardType: UIKeyboardType
+returnKeyType: UIReturnKeyType
+secureTextEntry: boolean
+// Callbacks
 on('shouldBeginEditing', (sender: UITextField) => boolean): void
 on('didBeginEditing', (sender: UITextField) => void): void
 on('shouldEndEditing', (sender: UITextField) => boolean): void
@@ -361,6 +370,10 @@ on('didEndEditing', (sender: UITextField) => void): void
 on('shouldChange', (sender: UITextField, charactersInRange: Range, replacementString: string) => boolean): void
 on('shouldClear', (sender: UITextField) => boolean): void
 on('shouldReturn', (sender: UITextField) => boolean): void
+on('willChangeSelection', (sender: UITextField) => void): void
+on('didChangeSelection', (sender: UITextField) => void): void
+on('willChangeText', (sender: UITextField) => void): void
+on('didChangeText', (sender: UITextField) => void): void
 ```
 
 ### UITextFieldViewMode
@@ -371,6 +384,63 @@ enum UITextFieldViewMode {
   whileEditing
   unlessEditing
   always
+}
+```
+
+### UITextAutocapitalizationType
+
+```typescript
+enum UITextAutocapitalizationType {
+  none,
+  words,
+  sentences,
+  allCharacters,
+}
+```
+
+### UITextAutocorrectionType
+
+```typescript
+enum UITextAutocorrectionType {
+  default,
+  no,
+  yes,
+}
+```
+
+### UITextSpellCheckingType
+
+```typescript
+enum UITextSpellCheckingType {
+  default,
+  no,
+  yes
+}
+```
+
+### UIKeyboardType
+
+```typescript
+enum UIKeyboardType {
+  default,
+  ASCIICapable
+  numbersAndPunctuation,
+  numberPad,
+  phonePad,
+  emailAddress,
+  decimalPad
+}
+```
+
+### UIReturnKeyType
+
+```typescript
+enum UIReturnKeyType {
+  default,
+  go,
+  next,
+  send,
+  done
 }
 ```
 
