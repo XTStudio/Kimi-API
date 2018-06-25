@@ -45,6 +45,7 @@ Point = {x: number, y: number}
 Size = {width: number, height: number}
 AffineTransform = {a: number, b: number, c: number, d: number, tx: number, ty: number}
 EdgeInsets = {top: number, left: number, bottom: number, right: number}
+Range = {location: number, length: number}
 ```
 
 ### UIView
@@ -353,7 +354,13 @@ leftViewMode: UITextFieldViewMode
 rightView: UIView | undefined
 rightViewMode: UITextFieldViewMode
 clearsOnInsertion: boolean 
-on('should')
+on('shouldBeginEditing', (sender: UITextField) => boolean): void
+on('didBeginEditing', (sender: UITextField) => void): void
+on('shouldEndEditing', (sender: UITextField) => boolean): void
+on('didEndEditing', (sender: UITextField) => void): void
+on('shouldChange', (sender: UITextField, charactersInRange: Range, replacementString: string) => boolean): void
+on('shouldClear', (sender: UITextField) => boolean): void
+on('shouldReturn', (sender: UITextField) => boolean): void
 ```
 
 ### UITextFieldViewMode
