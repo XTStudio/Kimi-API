@@ -372,10 +372,35 @@ on('didEndEditing', (sender: UITextField) => void): void
 on('shouldChange', (sender: UITextField, charactersInRange: Range, replacementString: string) => boolean): void
 on('shouldClear', (sender: UITextField) => boolean): void
 on('shouldReturn', (sender: UITextField) => boolean): void
-on('willChangeSelection', (sender: UITextField) => void): void
-on('didChangeSelection', (sender: UITextField) => void): void
-on('willChangeText', (sender: UITextField) => void): void
-on('didChangeText', (sender: UITextField) => void): void
+```
+
+### UITextView: UIScrollView
+
+```typescript
+// TextView
+text: string | undefined
+textColor: UIColor | undefined
+font: UIFont | undefined
+textAlignment: UITextAlignment
+editable: boolean
+selectable: boolean
+readonly editing: boolean
+scrollRangeToVisible(range: Range): void
+focus(): void
+blur(): void
+// TextInputTraits
+autocapitalizationType: UITextAutocapitalizationType
+autocorrectionType: UITextAutocorrectionType
+spellCheckingType: UITextSpellCheckingType
+keyboardType: UIKeyboardType
+returnKeyType: UIReturnKeyType
+secureTextEntry: boolean
+// Callbacks
+on('shouldBeginEditing', (sender: UITextView) => boolean): void
+on('didBeginEditing', (sender: UITextView) => void): void
+on('shouldEndEditing', (sender: UITextView) => boolean): void
+on('didEndEditing', (sender: UITextView) => void): void
+on('shouldChange', (sender: UITextView, charactersInRange: Range, replacementString: string) => boolean): void
 ```
 
 ### UITextFieldViewMode
