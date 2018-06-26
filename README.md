@@ -355,6 +355,8 @@ leftViewMode: UITextFieldViewMode
 rightView: UIView | undefined
 rightViewMode: UITextFieldViewMode
 clearsOnInsertion: boolean 
+focus(): void
+blur(): void
 // TextInputTraits
 autocapitalizationType: UITextAutocapitalizationType
 autocorrectionType: UITextAutocorrectionType
