@@ -471,6 +471,36 @@ enum UIReturnKeyType {
 }
 ```
 
+### UIScrollView: UIView
+
+```typescript
+contentOffset: Point
+contentSize: Size
+contentInset: EdgeInset
+directionalLockEnabled: boolean
+bounces: boolean
+alwaysBounceVertical: boolean
+alwaysBounceHorizontal: boolean
+pagingEnabled: boolean
+scrollEnabled: boolean
+showsHorizontalScrollIndicator: boolean
+showsVerticalScrollIndicator: boolean
+decelerationRate: number
+setContentOffset(contentOffset: Point, animated: boolean): void
+scrollRectToVisible(rect: Rect, animated: boolean): void
+readonly tracking: boolean
+readonly dragging: boolean
+readonly decelerating: boolean
+scrollsToTop: boolean
+on('didScroll', (sender: UIScrollView) => void): void
+on('willBeginDragging', (sender: UIScrollView) => void): void
+on('willEndDragging', (sender: UIScrollView, velocity: Point) => Point | undefined): void
+on('didEndDragging', (sender: UIScrollView, decelerate: boolean) => void): void
+on('willBeginDecelerating', (sender: UIScrollView) => void): void
+on('didEndScrollingAnimation', (sender: UIScrollView) => void): void
+on('didScrollToTop', (sender: UIScrollView) => void): void
+```
+
 ## CoreGraphics
 
 ### CALayer
