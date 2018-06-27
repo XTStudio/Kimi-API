@@ -501,6 +501,42 @@ on('didEndScrollingAnimation', (sender: UIScrollView) => void): void
 on('didScrollToTop', (sender: UIScrollView) => void): void
 ```
 
+### UITableView: UIScrollView
+
+```typescript
+// Properties
+tableHeaderView: UIView | undefined
+tableFooterView: UIView | undefined
+// Methods
+register(initializer: (context: any) => UITableViewCell, reuseIdentifier: string)
+dequeueReusableCell(reuseIdentifier: string, indexPath: UIIndexPath): UITableViewCell
+reloadData(): void
+selectRow(indexPath: UIIndexPath, animated: boolean): void
+deselectRow(indexPath: UIIndexPath, animated: boolean): void
+// Delegates
+on('numberOfSections', () => number): void
+on('numberOfRows', (inSection: number) => number): void
+on('heightForRow', (indexPath: UIIndexPath) => number): void
+on('cellForRow', (indexPath: UIIndexPath) => UITableViewCell): void
+on('didSelectRow', (indexPath: UIIndexPath, cell: UITableViewCell) => void): void
+on('didDeselectRow', (indexPath: UIIndexPath, cell: UITableViewCell) => void): void
+```
+
+### UITableViewCell: UIView
+
+```typescript
+constructor(context: any)
+
+```
+
+### UIIndexPath
+
+```typescript
+constructor(row: number, section: number)
+readonly row: number
+readonly section: number
+```
+
 ## CoreGraphics
 
 ### CALayer
