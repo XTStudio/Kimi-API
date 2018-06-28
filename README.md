@@ -507,6 +507,8 @@ on('didScrollToTop', (sender: UIScrollView) => void): void
 // Properties
 tableHeaderView: UIView | undefined
 tableFooterView: UIView | undefined
+separatorColor: UIColor | undefined
+separatorInset: EdgeInsets
 // Methods
 register(initializer: (context: any) => UITableViewCell, reuseIdentifier: string)
 dequeueReusableCell(reuseIdentifier: string, indexPath: UIIndexPath): UITableViewCell
@@ -518,6 +520,10 @@ on('numberOfSections', () => number): void
 on('numberOfRows', (inSection: number) => number): void
 on('heightForRow', (indexPath: UIIndexPath) => number): void
 on('cellForRow', (indexPath: UIIndexPath) => UITableViewCell): void
+on('viewForHeader', (inSection: number) => UIView | undefined): void
+on('heightForHeader', (inSection: number) => number): void
+on('viewForFooter', (inSection: number) => UIView | undefined): void
+on('heightForFooter', (inSection: number) => number): void
 on('didSelectRow', (indexPath: UIIndexPath, cell: UITableViewCell) => void): void
 on('didDeselectRow', (indexPath: UIIndexPath, cell: UITableViewCell) => void): void
 ```
@@ -526,7 +532,11 @@ on('didDeselectRow', (indexPath: UIIndexPath, cell: UITableViewCell) => void): v
 
 ```typescript
 constructor(context: any)
-
+readonly contentView: UIView
+readonly reuseIdentifier: string | undefined
+hasSelectionStyle: boolean = true
+on('selected', (sender: UITableViewCell, selected: boolean, animated: boolean) => void): void
+on('highlighted', (sender: UITableViewCell, highlighted: boolean, animated: boolean) => void): void
 ```
 
 ### UIIndexPath
@@ -535,6 +545,55 @@ constructor(context: any)
 constructor(row: number, section: number)
 readonly row: number
 readonly section: number
+```
+
+### UICollectionView: UIScrollView
+
+```typescript
+constructor(collectionViewLayout: UICollectionViewLayout)
+readonly collectionViewLayout: UICollectionViewLayout
+// Methods
+register(initializer: (context: any) => UICollectionViewCell, reuseIdentifier: string)
+dequeueReusableCell(reuseIdentifier: string, indexPath: UIIndexPath): UICollectionViewCell
+reloadData(): void
+// Delegates
+on('numberOfSections', () => number): void
+on('numberOfItems', (inSection: number) => number): void
+on('cellForItem', (indexPath: UIIndexPath) => UICollectionViewCell): void
+```
+
+### UICollectionViewCell: UIView
+
+```typescript
+
+```
+
+### UICollectionViewLayout
+
+```typescript
+readonly collectionView: UICollectionView | undefined
+invalidateLayout(): void
+```
+
+### UICollectionViewFlowLayout: UICollectionViewLayout
+
+```typescript
+scrollDirection: UICollectionViewScrollDirection = .vertical
+on('sizeForItem', (indexPath: IndexPath) => Size): void
+on('insetForSection', (inSection: number) => EdgeInsets): void
+on('minimumLineSpacing', (inSection: number) => number): void
+on('minimumInteritemSpacing', (inSection: number) => number): void
+on('referenceSizeForHeader', (indexPath: IndexPath) => Size): void
+on('referenceSizeForFooter', (indexPath: IndexPath) => Size): void
+```
+
+### UICollectionViewScrollDirection
+
+```typescript
+enum UICollectionViewScrollDirection {
+  vertical,
+  horizontal,
+}
 ```
 
 ## CoreGraphics
