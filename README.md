@@ -614,6 +614,33 @@ enum UICollectionViewScrollDirection {
 }
 ```
 
+### UIAlert
+
+```typescript
+constructor(message: string, buttonText: string = "OK")
+show(completed: () => void): void
+```
+
+### UIPrompt
+
+```typescript
+constructor(message: string)
+confirmTitle: string = "Done"
+cancelTitle: string = "Cancel"
+placeholder: string
+defaultValue: string
+show(completed: (text: string) => void, cancelled?: () => void): void
+```
+
+### UIConfirm
+
+```typescript
+constructor(message: string)
+confirmTitle: string = "Yes"
+cancelTitle: string = "No"
+show(completed?: () => void, cancelled?: () => void): void
+```
+
 ## CoreGraphics
 
 ### CALayer
