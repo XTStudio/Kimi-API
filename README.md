@@ -641,6 +641,39 @@ cancelTitle: string = "No"
 show(completed?: () => void, cancelled?: () => void): void
 ```
 
+### UIActivityIndicatorView: UIView
+
+```typescript
+color: UIColor
+largeStyle: boolean
+readonly animating: boolean
+startAnimating(): void
+stopAnimating(): void
+```
+
+### UISwitch: UIView
+
+```typescript
+onTintColor: UIColor | undefined
+thumbTintColor: UIColor | undefined
+isOn: boolean
+setOn(on: boolean, animated: boolean): void
+on('valueChanged', (sender: UISwitch) => void): void
+```
+
+### UISlider: UIView
+
+```typescript
+value: number = 0.0
+minimumValue: number = 0.0
+maximumValue: number = 1.0
+minimumTrackTintColor: UIColor | undefined
+maximumTrackTintColor: UIColor | undefined
+thumbTintColor: UIColor | undefined
+setValue(value: number, animated: boolean): void
+on('valueChanged', (sender: UISlider) => void): void
+```
+
 ## CoreGraphics
 
 ### CALayer
