@@ -509,6 +509,8 @@ tableHeaderView: UIView | undefined
 tableFooterView: UIView | undefined
 separatorColor: UIColor | undefined
 separatorInset: EdgeInsets
+allowsSelection: boolean
+allowsMultipleSelection: boolean
 // Methods
 register(initializer: (context: any) => UITableViewCell, reuseIdentifier: string)
 dequeueReusableCell(reuseIdentifier: string, indexPath: UIIndexPath): UITableViewCell
@@ -552,20 +554,30 @@ readonly section: number
 ```typescript
 constructor(collectionViewLayout: UICollectionViewLayout)
 readonly collectionViewLayout: UICollectionViewLayout
+allowsSelection: boolean
+allowsMultipleSelection: boolean
 // Methods
 register(initializer: (context: any) => UICollectionViewCell, reuseIdentifier: string)
 dequeueReusableCell(reuseIdentifier: string, indexPath: UIIndexPath): UICollectionViewCell
 reloadData(): void
+selectItem(indexPath: UIIndexPath, animated: boolean): void
+deselectItem(indexPath: UIIndexPath, animated: boolean): void
 // Delegates
 on('numberOfSections', () => number): void
 on('numberOfItems', (inSection: number) => number): void
 on('cellForItem', (indexPath: UIIndexPath) => UICollectionViewCell): void
+on('didSelectItem', (indexPath: UIIndexPath, cell: UICollectionViewCell) => void): void
+on('didDeselectItem', (indexPath: UIIndexPath, cell: UICollectionViewCell) => void): void
 ```
 
 ### UICollectionViewCell: UIView
 
 ```typescript
-
+constructor(context: any)
+readonly contentView: UIView
+readonly reuseIdentifier: string | undefined
+on('selected', (sender: UITableViewCell, selected: boolean) => void): void
+on('highlighted', (sender: UITableViewCell, highlighted: boolean, animated: boolean) => void): void
 ```
 
 ### UICollectionViewLayout
@@ -578,13 +590,19 @@ invalidateLayout(): void
 ### UICollectionViewFlowLayout: UICollectionViewLayout
 
 ```typescript
+minimumLineSpacing: number
+minimumInteritemSpacing: number
+itemSize: Size
+headerReferenceSize: Size
+footerReferenceSize: Size
+sectionInset: EdgeInsets
 scrollDirection: UICollectionViewScrollDirection = .vertical
 on('sizeForItem', (indexPath: IndexPath) => Size): void
 on('insetForSection', (inSection: number) => EdgeInsets): void
 on('minimumLineSpacing', (inSection: number) => number): void
 on('minimumInteritemSpacing', (inSection: number) => number): void
-on('referenceSizeForHeader', (indexPath: IndexPath) => Size): void
-on('referenceSizeForFooter', (indexPath: IndexPath) => Size): void
+on('referenceSizeForHeader', (inSection: number) => Size): void
+on('referenceSizeForFooter', (inSection: number) => Size): void
 ```
 
 ### UICollectionViewScrollDirection
