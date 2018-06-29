@@ -577,7 +577,7 @@ constructor(context: any)
 readonly contentView: UIView
 readonly reuseIdentifier: string | undefined
 on('selected', (sender: UITableViewCell, selected: boolean) => void): void
-on('highlighted', (sender: UITableViewCell, highlighted: boolean, animated: boolean) => void): void
+on('highlighted', (sender: UITableViewCell, highlighted: boolean) => void): void
 ```
 
 ### UICollectionViewLayout
