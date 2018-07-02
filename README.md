@@ -308,11 +308,50 @@ enum UIImageRenderingMode {
 
 ```typescript
 text: string | undefined
+attributedText: UIAttributedString | undefined
 font: UIFont | undefined
 textColor: UIColor | undefined
 textAlignment: UITextAlignment
 lineBreakMode: UILineBreakMode
 numberOfLines: number
+```
+
+### UIAttributedString
+
+```typescript
+constructor(str: string, attributes: {[key: string]: any})  // attributes -> key: UIAttributedStringKey
+mutable(): UIMutableAttributedString
+```
+
+### UIMutableAttributedString: UIAttributedString
+
+```typescript
+constructor(str: string, attributes: {[key: string]: any})  // attributes -> key: UIAttributedStringKey
+replaceCharacters(inRange: Range, withString: string): void
+setAttributes(attributes: {[key: string]: any}, range: Range): void
+addAttribute(attrName: string, value: any, range: Range): void
+addAttributes(attributes: {[key: string]: any}, range: Range): void
+removeAttribute(attrName: string, range: Range): void
+replaceCharactersWithAttributedString(inRange: Range, withAttributedString: UIAttributedString): void
+insertAttributedString(attributedString: UIAttributedString, atIndex: number): void
+appendAttributedString(attributedString: UIAttributedString): void
+deleteCharacters(inRange: Range): void
+immutable(): UIAttributedString
+```
+
+### UIAttributedStringKey
+
+```typescript
+const UIForegroundColorAttributeName: string      // value: UIColor
+const UIFontAttributeName: string                 // value: UIFont
+const UIBackgroundColorAttributeName: string      // value: UIColor
+const UIKernAttributeName: string                 // value: number
+const UIStrikethroughStyleAttributeName: string   // value: number
+const UIUnderlineStyleAttributeName: string       // value: number
+const UIStrokeColorAttributeName: string          // value: UIColor
+const UIStrokeWidthAttributeName: string          // value: number
+const UIUnderlineColorAttributeName: string       // value: UIColor
+const UIStrikethroughColorAttributeName: string   // value: UIColor
 ```
 
 ### UITextAlignment
@@ -672,6 +711,28 @@ maximumTrackTintColor: UIColor | undefined
 thumbTintColor: UIColor | undefined
 setValue(value: number, animated: boolean): void
 on('valueChanged', (sender: UISlider) => void): void
+```
+
+### UIWebView: UIView
+
+```typescript
+// Properties
+readonly title: string | undefined
+readonly URL: NSURL | undefined
+readonly loading: boolean
+// Methods
+loadRequest(request: NSURLRequest): void
+loadHTMLString(HTMLString: string, baseURL: NSURL): void
+goBack(): void
+goForward(): void
+reload(): void
+stopLoading(): void
+evaluateJavaScript(script: string, completed: (result?: any, error?: Error) => void): void
+// Delegates
+on('newRequest', (request: NSURLRequest) => boolean): void
+on('didStart', () => void): void
+on('didFinish', () => void): void
+on('didFail', (error: Error) => void): void
 ```
 
 ## CoreGraphics
