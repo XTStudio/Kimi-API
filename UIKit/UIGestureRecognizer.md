@@ -1,4 +1,4 @@
-# UIKit > UIGestureRecognizer
+# UIKit | UIGestureRecognizer
 
 ## UIGestureRecognizerState
 

@@ -1,4 +1,4 @@
-# UIKit > UIActivityIndicatorView extends UIView
+# UIKit | UIActivityIndicatorView extends UIView
 
 A view that shows that a task is in progress.
 

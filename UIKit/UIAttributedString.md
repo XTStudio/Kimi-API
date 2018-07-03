@@ -1,4 +1,4 @@
-# UIKit > UIAttributedString
+# UIKit | UIAttributedString
 
 ## UIAttributedStringKey
 

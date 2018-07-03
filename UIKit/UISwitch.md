@@ -1,4 +1,4 @@
-# UIKit > UISwitch extends UIView
+# UIKit | UISwitch extends UIView
 
 A control that offers a binary choice, such as On/Off.
 

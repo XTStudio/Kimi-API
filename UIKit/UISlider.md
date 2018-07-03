@@ -1,4 +1,4 @@
-# UIKit > UISlider extends UIView
+# UIKit | UISlider extends UIView
 
 A control used to select a single value from a continuous range of values.
 

@@ -1,4 +1,4 @@
-# UIKit > UIScrollView extends UIView
+# UIKit | UIScrollView extends UIView
 
 A view that allows the scrolling and zooming of its contained views.
 

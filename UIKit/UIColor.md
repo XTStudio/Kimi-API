@@ -1,4 +1,4 @@
-# UIKit > UIColor
+# UIKit | UIColor
 
 An object that stores color data and sometimes opacity (alpha value).
 

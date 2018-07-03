@@ -1,4 +1,4 @@
-# UIKit > Dialogs
+# UIKit | Dialogs
 
 ## UIAlert
 

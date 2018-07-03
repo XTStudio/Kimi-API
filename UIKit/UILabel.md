@@ -1,4 +1,4 @@
-# UIKit > UILabel extends UIView
+# UIKit | UILabel extends UIView
 
 A view that displays one or more lines of read-only text, often used in conjunction with controls to describe their intended purpose.
 

@@ -1,4 +1,4 @@
-# UIKit > UITableView extends UIScrollView
+# UIKit | UITableView extends UIScrollView
 
 A view that presents data using rows arranged in a single column.
 
@@ -109,7 +109,7 @@ on('didSelectRow', (indexPath: UIIndexPath, cell: UITableViewCell) => void): voi
 on('didDeselectRow', (indexPath: UIIndexPath, cell: UITableViewCell) => void): void
 ```
 
-# UIKit > UITableViewCell extends UIView
+# UIKit | UITableViewCell extends UIView
 
 A cell in a table view.
 

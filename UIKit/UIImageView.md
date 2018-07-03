@@ -1,4 +1,4 @@
-# UIKit > UIImageView extends UIView
+# UIKit | UIImageView extends UIView
 
 An object that displays a single image or a sequence of animated images in your interface.
 

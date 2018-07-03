@@ -1,4 +1,4 @@
-# UIKit > UITextField extends UIView
+# UIKit | UITextField extends UIView
 
 ```typescript
 /**

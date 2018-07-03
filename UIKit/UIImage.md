@@ -1,4 +1,4 @@
-# UIKit > UIImage
+# UIKit | UIImage
 
 
 ## UIImageRenderingMode

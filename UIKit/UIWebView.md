@@ -1,4 +1,4 @@
-# UIKit > UIWebView extends UIView
+# UIKit | UIWebView extends UIView
 
 An object that displays interactive web content, such as for an in-app browser.
 

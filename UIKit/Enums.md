@@ -1,4 +1,4 @@
-# UIKit > Enums
+# UIKit | Enums
 
 ## UIViewContentMode
 

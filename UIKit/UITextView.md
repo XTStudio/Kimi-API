@@ -1,4 +1,4 @@
-# UIKit > UITextView extends UIScrollView
+# UIKit | UITextView extends UIScrollView
 
 A scrollable, multiline text region.
 

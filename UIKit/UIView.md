@@ -1,4 +1,4 @@
-# UIKit > UIView
+# UIKit | UIView
 
 An object that manages the content for a rectangular area on the screen.
 

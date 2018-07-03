@@ -1,4 +1,4 @@
-# CoreGraphics > CALayer
+# CoreGraphics | CALayer
 
 An object that manages image-based content and allows you to perform animations on that content.
 

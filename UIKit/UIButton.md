@@ -1,4 +1,4 @@
-# UIKit > UIButton extends UIView
+# UIKit | UIButton extends UIView
 
 A control that executes your custom code in response to user interactions.
 

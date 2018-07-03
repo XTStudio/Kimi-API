@@ -1,4 +1,4 @@
-# UIKIt > UIAnimator
+# UIKIt | UIAnimator
 
 ```typescript
 static shared: UIAnimator
