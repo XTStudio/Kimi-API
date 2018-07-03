@@ -225,6 +225,7 @@ setTitle(title?: string, state: UIControlState): void
 setTitleColor(color?: UIColor, state: UIControlState): void
 setTitleFont(font: UIFont): void
 setImage(image?: UIImage, state: UIControlState): void
+setAttributedTitle(title?: UIAttributedString, state: UIControlState): void
 contentEdgeInsets: EdgeInsets
 titleEdgeInsets: EdgeInsets
 imageEdgeInsets: EdgeInsets
