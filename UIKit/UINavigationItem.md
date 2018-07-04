@@ -1,4 +1,4 @@
-# UIKit > UINavigationItem
+# UIKit | UINavigationItem
 
 The items to be displayed by a navigation bar when the associated view controller is visible.
 

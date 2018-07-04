@@ -1,4 +1,4 @@
-# UIKit > UINavigationController extends UIViewController
+# UIKit | UINavigationController extends UIViewController
 
 ```typescript
 

@@ -1,4 +1,4 @@
-# UIKit > UIBarButtonItem
+# UIKit | UIBarButtonItem
 
 A button specialized for placement on a toolbar or tab bar.
 

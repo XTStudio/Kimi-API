@@ -1,4 +1,4 @@
-# UIKit > UIViewController
+# UIKit | UIViewController
 
 An object that manages a view hierarchy for your UIKit app.
 
@@ -115,11 +115,24 @@ willMoveToParentViewController(parent?: UIViewController): void
 didMoveToParentViewController(parent?: UIViewController): void
 
 /**
- * Return current UINavigationController.
+ * The nearest ancestor in the view controller hierarchy that is a navigation controller.
  */
 readonly navigationController: UINavigationController | undefined
 
+/**
+ * Return current UINavigationItem.
+ */
 readonly navigationItem: UINavigationItem
+
+/**
+ * The nearest ancestor in the view controller hierarchy that is a tab bar controller.
+ */
+readonly tabBarController: UITabBarController
+
+/**
+ * Return current UITabBarItem.
+ */
+readonly tabBarItem: UITabBarItem
 
 ```
 
@@ -128,3 +141,5 @@ readonly navigationItem: UINavigationItem
 * [Apple Document](https://developer.apple.com/documentation/uikit/uiviewcontroller?language=objc)
 * [UINavigationController](UINavigationController.md)
 * [UINavigationItem](UINavigationItem.md)
+* [UITabBarController](UITabBarController.md)
+* [UITabBarItem](UITabBarItem.md)

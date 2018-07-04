@@ -1,4 +1,4 @@
-# UIKit > UINavigationBar extends UIView
+# UIKit | UINavigationBar extends UIView
 
 ```typescript
 

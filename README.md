@@ -52,7 +52,12 @@ Construct and manage a graphical, event-driven user interface for your app.
 * [UIScreen](UIKit/UIScreen.md)
 * [UIDevice](UIKit/UIDevice.md)
 * [UIViewController](UIKit/UIViewController.md)
-
+* [UINavigationController](UIKit/UINavigationController.md)
+* [UINavigationBar](UIKit/UINavigationBar.md)
+* [UIBarButtonItem](UIKit/UIBarButtonItem.md)
+* [UITabBarController](UIKit/UITabBarController.md)
+* [UITabBar](UIKit/UITabBar.md)
+* [UITabBarItem](UIKit/UITabBarItem.md)
 
 ## CoreGraphics
 
