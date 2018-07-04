@@ -49,6 +49,10 @@ Construct and manage a graphical, event-driven user interface for your app.
 * [UISwitch](UIKit/UISwitch.md)
 * [UISlider](UIKit/UISlider.md)
 * [UIWebView](UIKit/UIWebView.md)
+* [UIScreen](UIKit/UIScreen.md)
+* [UIDevice](UIKit/UIDevice.md)
+* [UIViewController](UIKit/UIViewController.md)
+
 
 ## CoreGraphics
 
