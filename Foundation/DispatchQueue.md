@@ -10,6 +10,11 @@ DispatchQueue manages the execution of work items. Each work item submitted to a
 static main: DispatchQueue
 
 /**
+ * Returns global queue. 
+ */
+static global: DispatchQueue
+
+/**
  * Creates an instance with specific identifier optionally. 
  */
 constructor(identifier?: string): DispatchQueue
@@ -17,11 +22,16 @@ constructor(identifier?: string): DispatchQueue
 /**
  * create an async task.
  */
-async(asyncBlock: () => void): void
+async(asyncBlock: () => void, completed: (result?: any, error?: Error) => void): void
 
 /**
  * create an async task after seconds delay.
  */
 asyncAfter(delayInSeconds: number, asyncBlock: () => void): void
+
+/**
+ * create an isolate task.
+ */
+isolate(isolateBlock: () => void, ...arguments): void
 
 ```
