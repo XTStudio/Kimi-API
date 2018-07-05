@@ -133,3 +133,35 @@ enum UIReturnKeyType {
   done
 }
 ```
+
+## UILayoutConstraintAxis
+
+```typescript
+enum UILayoutConstraintAxis {
+  horizontal,
+  vertical,
+}
+```
+
+## UIStackViewDistribution
+
+```typescript
+enum UIStackViewDistribution {
+  fill,
+  fillEqually,
+  fillProportionally,
+  equalSpacing,
+  equalCentering,
+}
+```
+
+## UIStackViewAlignment
+
+```typescript
+enum UIStackViewAlignment {
+  fill,
+  leading,
+  center,
+  trailing,
+}
+```
