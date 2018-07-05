@@ -58,6 +58,7 @@ Construct and manage a graphical, event-driven user interface for your app.
 * [UITabBarController](UIKit/UITabBarController.md)
 * [UITabBar](UIKit/UITabBar.md)
 * [UITabBarItem](UIKit/UITabBarItem.md)
+* [UIPageViewControlller](UIKit/UIPageViewControlller.md)
 
 ## CoreGraphics
 
