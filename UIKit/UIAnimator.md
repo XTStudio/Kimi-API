@@ -6,7 +6,7 @@ You use UIAnimator create animation to UIView components.
 /**
  * Always use shared instance.
  */
-static shared: UIAnimator
+static readonly shared: UIAnimator
 
 /**
  * Create linear animation.

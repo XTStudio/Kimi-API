@@ -6,14 +6,14 @@ An object that stores color data and sometimes opacity (alpha value).
 /**
  * Preset colors
  */
-static blackColor: UIColor
-static clearColor: UIColor
-static grayColor: UIColor
-static redColor: UIColor
-static yellowColor: UIColor
-static greenColor: UIColor
-static blueColor: UIColor
-static whiteColor: UIColor
+static readonly blackColor: UIColor
+static readonly clearColor: UIColor
+static readonly grayColor: UIColor
+static readonly redColor: UIColor
+static readonly yellowColor: UIColor
+static readonly greenColor: UIColor
+static readonly blueColor: UIColor
+static readonly whiteColor: UIColor
 
 /**
  * Creates and returns a color object using the specified opacity and RGB component values. 

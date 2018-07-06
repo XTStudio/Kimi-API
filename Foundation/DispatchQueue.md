@@ -7,12 +7,12 @@ DispatchQueue manages the execution of work items. Each work item submitted to a
 /**
  * Returns main queue. 
  */
-static main: DispatchQueue
+static readonly main: DispatchQueue
 
 /**
  * Returns global queue. 
  */
-static global: DispatchQueue
+static readonly global: DispatchQueue
 
 /**
  * Creates an instance with specific identifier optionally. 

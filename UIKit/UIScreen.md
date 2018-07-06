@@ -6,7 +6,7 @@ An object that defines the properties associated with a hardware-based display.
 /**
  * Returns the screen object representing the device’s screen.
  */
-static mainScreen: UIScreen
+static readonly mainScreen: UIScreen
 
 /**
  * The bounding rectangle of the screen, measured in points.
