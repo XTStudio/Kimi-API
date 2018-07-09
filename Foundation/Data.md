@@ -9,12 +9,11 @@ A static byte buffer in memory.
 /**
  * Creates and returns a data object, using the one of following parameter will create an object with specific binary data.
  */
-constructor({
-             arrayBuffer?: ArrayBuffer,
-             utf8String?: string, 
-             base64EncodedData?: Data,
-             base64EncodedString?: string,
-             })
+constructor(value?: ArrayBuffer | {
+                                     utf8String?: string, 
+                                     base64EncodedData?: Data,
+                                     base64EncodedString?: string,
+                                  })
 
 /**
  * Returns an array-buffer object.
