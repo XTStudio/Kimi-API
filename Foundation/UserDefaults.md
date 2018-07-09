@@ -24,4 +24,9 @@ valueForKey(forKey: string): any | undefined
  */
 setValue(value: any, forKey: string): void
 
+/**
+ * Reset all values.
+ */
+reset(): void
+
 ```
