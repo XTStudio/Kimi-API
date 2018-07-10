@@ -12,22 +12,22 @@ static readonly defaultManager: FileManager
 /**
  * Returns the document directory for the current application.
  */
-readonly readonly documentDirectory: string
+static readonly documentDirectory: string
 
 /**
  * Returns the library directory for the current application.
  */
-readonly readonly libraryDirectory: string
+static readonly libraryDirectory: string
 
 /**
  * Returns the cache directory for the current application.
  */
-readonly readonly cacheDirectory: string
+static readonly cacheDirectory: string
 
 /**
  * Returns the temporary directory for the current application.
  */
-readonly readonly temporaryDirectory: string
+static readonly temporaryDirectory: string
 
 /**
  * Returns an array of strings identifying the paths for all items in the specified directory.
