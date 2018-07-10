@@ -26,7 +26,7 @@ A task, like downloading a specific resource, performed in a URL session.
 /**
  * The current state of the task—active, in the process of being canceled, or completed.
  */
-readonly state: NSURLSessionTaskState
+readonly state: URLSessionTaskState
 
 /**
  * The number of bytes that the task expects to receive in the response body.
@@ -59,10 +59,10 @@ cancel(): void
 resume(): void
 ```
 
-## NSURLSessionTaskState
+## URLSessionTaskState
 
 ```typescript
-enum NSURLSessionTaskState {
+enum URLSessionTaskState {
     /**
      * The task is currently being serviced by the session.
      */
