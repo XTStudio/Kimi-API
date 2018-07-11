@@ -33,7 +33,7 @@ static readonly temporaryDirectory: string
  * Returns an array of strings identifying the paths for all items in the specified directory.
  * If deepSearch as true, performs a deep enumeration of the specified directory and returns the paths of all of the contained subdirectories.
  */
-subpathsAtPath(atPath: string, deepSearch?: boolean = false): string[]
+subpaths(atPath: string, deepSearch?: boolean = false): string[]
 
 /**
  * Creates a directory with given attributes at the specified path.
