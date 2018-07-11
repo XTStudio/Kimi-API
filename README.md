@@ -22,7 +22,17 @@ Kimi will not accept null as argument and return value, optional value will be `
 
 Access essential data types, collections, and operating-system services to define the base layer of functionality for your app.
 
+* [Bundle](Foundation/Bundle.md)
+* [Data](Foundation/Data.md)
 * [DispatchQueue](Foundation/DispatchQueue.md)
+* [FileManager](Foundation/FileManager.md)
+* [Timer](Foundation/Timer.md)
+* [URL](Foundation/URL.md)
+* [URLRequest](Foundation/URLRequest.md)
+* [URLResponse](Foundation/URLResponse.md)
+* [URLSession](Foundation/URLSession.md)
+* [UserDefaults](Foundation/UserDefaults.md)
+* [UUID](Foundation/UUID.md)
 
 ## UIKit
 
@@ -73,13 +83,13 @@ Construct and manage a graphical, event-driven user interface for your app.
 * [UIIndexPath](UIKit/UIIndexPath.md)
 * [UIScreen](UIKit/UIScreen.md)
 * [UIDevice](UIKit/UIDevice.md)
-
+* [UIBezierPath](UIKit/UIBezierPath.md)
 
 ## CoreGraphics
 
 2D Rendering system.
 
 * [CALayer](CoreGraphics/CALayer.md)
-
-
-
+* [CAGradientLayer](CoreGraphics/CAGradientLayer.md)
+* [CAShapeLayer](CoreGraphics/CAShapeLayer.md)
+* [CADisplayLink](CoreGraphics/CADisplayLink.md)
