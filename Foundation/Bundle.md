@@ -7,12 +7,12 @@ A representation of the code and resources stored in a bundle directory on disk.
 /**
  * Returns the bundle of native application.
  */
-static readonly nativeBundle: Bundle
+static readonly native: Bundle
 
 /**
  * Returns the bundle of JavaScript application.
  */
-static readonly jsBundle: Bundle
+static readonly js: Bundle
 
 /**
  * Returns a specific file path in bundle.
