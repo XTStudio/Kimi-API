@@ -24,21 +24,4 @@ startPoint: Point
  */
 endPoint: Point
 
-/**
- * Style of gradient drawn by the layer.
- */
-type: CAGradientLayerType
-
-```
-
-## CAGradientLayerType
-
-```typescript
-
-enum CAGradientLayerType {
-    axial,
-    conic,
-    radial,
-}
-
 ```
