@@ -9,7 +9,7 @@ A URL load request that is independent of protocol or URL scheme.
 /**
  * Creates a URL request with the specified URL, cache policy, and timeout values.
  */
-constructor(aURL: URL, cachePolicy?: URLRequestCachePolicy, timeout?: number)
+constructor(aURL: URL | string, cachePolicy?: URLRequestCachePolicy, timeout?: number)
 
 /**
  * The HTTP request method.
@@ -50,7 +50,7 @@ mutable(): MutableURLRequest
 /**
  * Creates a mutable URL request with the specified URL, cache policy, and timeout values.
  */
-constructor(aURL: URL, cachePolicy?: URLRequestCachePolicy, timeout?: number)
+constructor(aURL: URL | string, cachePolicy?: URLRequestCachePolicy, timeout?: number)
 
 /**
  * The HTTP request method.
