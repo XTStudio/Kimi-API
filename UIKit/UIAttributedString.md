@@ -1,20 +1,5 @@
 # UIKit | UIAttributedString
 
-## UIAttributedStringKey
-
-```typescript
-const UIForegroundColorAttributeName: string      // value: UIColor
-const UIFontAttributeName: string                 // value: UIFont
-const UIBackgroundColorAttributeName: string      // value: UIColor
-const UIKernAttributeName: string                 // value: number
-const UIStrikethroughStyleAttributeName: string   // value: number
-const UIUnderlineStyleAttributeName: string       // value: number
-const UIStrokeColorAttributeName: string          // value: UIColor
-const UIStrokeWidthAttributeName: string          // value: number
-const UIUnderlineColorAttributeName: string       // value: UIColor
-const UIStrikethroughColorAttributeName: string   // value: UIColor
-```
-
 ## UIAttributedString
 
 A string that has associated attributes (such as visual style, hyperlinks, or accessibility data) for portions of its text.
@@ -24,6 +9,11 @@ A string that has associated attributes (such as visual style, hyperlinks, or ac
  * Returns an UIAttributedString object initialized with a given string and attributes.
  */
 constructor(str: string, attributes: {[key: string]: any})  // attributes -> key: UIAttributedStringKey
+
+/**
+ * Returns current UIAttributeString bounding rect in specific size.
+ */
+measure(inSize: Size): Rect
 
 /**
  * Returns an UIMutableAttributedString object instance with this string and attributes.
@@ -88,6 +78,64 @@ deleteCharacters(inRange: Range): void
  * Returns an UIAttributedString object instance with this string and attributes.
  */
 immutable(): UIAttributedString
+```
+
+## UIAttributedStringKey
+
+```typescript
+
+enum UIAttributedStringKey {
+    foregroundColor,      // value: UIColor
+    font,                 // value: UIFont
+    backgroundColor,      // value: UIColor
+    kern,                 // value: number
+    strikethroughStyle,   // value: number
+    underlineStyle,       // value: number
+    strokeColor,          // value: UIColor
+    strokeWidth,          // value: number
+    underlineColor,       // value: UIColor
+    strikethroughColor,   // value: UIColor
+    paragraphStyle,       // value: NSParagraphStyle
+}
+
+```
+
+## UIParagraphStyle
+
+An object that enables changing the values of the subattributes in a paragraph style attribute.
+
+```typescript
+
+/**
+ * The distance in points between the bottom of one line fragment and the top of the next.
+ */
+lineSpacing: number
+
+/**
+ * The text alignment of the receiver.
+ */
+alignment: UITextAlignment
+
+/**
+ * The mode that should be used to break lines in the receiver.
+ */
+lineBreakMode: UILineBreakMode
+
+/**
+ * The receiver’s minimum height.
+ */
+minimumLineHeight: number
+
+/**
+ * The receiver’s maximum line height.
+ */
+maximumLineHeight: number
+
+/**
+ * The line height multiple.
+ */
+lineHeightMultiple: number
+
 ```
 
 ## Relate
