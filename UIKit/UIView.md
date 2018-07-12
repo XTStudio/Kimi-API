@@ -205,6 +205,30 @@ addGestureRecognizer(gestureRecognizer: UIGestureRecognizer): void
  */
 removeGestureRecognizer(gestureRecognizer: UIGestureRecognizer): void
 
+// Accessibility
+
+/**
+ * Return YES if the receiver should be exposed as an accessibility element.
+ */
+isAccessibilityElement: boolean
+
+/**
+ * Returns the localized label that represents the element.
+ */
+accessibilityLabel: string
+
+/**
+ * Returns a localized string that describes the result of performing an action on the element, when the result is non-obvious.
+ */
+accessibilityHint: string
+
+/**
+ * Returns a localized string that represents the value of the element, such as the value 
+ * of a slider or the text in a text field. Use only when the label of the element
+ * differs from a value. For example: A volume slider has a label of "Volume", but a value of "60%".
+ */
+accessibilityValue: string
+
 ```
 
 ## Relates
