@@ -229,6 +229,11 @@ accessibilityHint: string
  */
 accessibilityValue: string
 
+/**
+ * A string that identifies the user interface element.
+ */
+accessibilityIdentifier: string
+
 ```
 
 ## Relates
