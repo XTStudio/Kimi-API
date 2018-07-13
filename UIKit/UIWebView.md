@@ -11,7 +11,7 @@ readonly title: string | undefined
 /**
  * The active URL.
  */
-readonly URL: NSURL | undefined
+readonly URL: URL | undefined
 
 /**
  * A Boolean value indicating whether the view is currently loading content.
@@ -21,12 +21,12 @@ readonly loading: boolean
 /**
  * Navigates to a requested URL.
  */
-loadRequest(request: NSURLRequest): void
+loadRequest(request: URLRequest): void
 
 /**
  * Sets the webpage contents and base URL.
  */
-loadHTMLString(HTMLString: string, baseURL: NSURL): void
+loadHTMLString(HTMLString: string, baseURL: URL): void
 
 /**
  * Navigates to the back item in the back-forward list.
@@ -56,7 +56,7 @@ evaluateJavaScript(script: string, completed: (result?: any, error?: Error) => v
 /**
  * Tells the delegate if a new request should be accepted.
  */
-on('newRequest', (request: NSURLRequest) => boolean): void
+on('newRequest', (request: URLRequest) => boolean): void
 
 /**
  * Calls after web page start loading.
