@@ -59,11 +59,6 @@ showsHorizontalScrollIndicator: boolean
 showsVerticalScrollIndicator: boolean
 
 /**
- * A floating-point value that determines the rate of deceleration after the user lifts their finger.
- */
-decelerationRate: number
-
-/**
  * Sets the offset from the content view’s origin that corresponds to the receiver’s origin.
  */
 setContentOffset(contentOffset: Point, animated: boolean): void
@@ -118,6 +113,11 @@ on('didEndDragging', (sender: UIScrollView, decelerate: boolean) => void): void
  * Tells that the scroll view is starting to decelerate the scrolling movement.
  */
 on('willBeginDecelerating', (sender: UIScrollView) => void): void
+
+/**
+ * Tells that the scroll view is ends to decelerate the scrolling movement.
+ */
+on('didEndDecelerating', (sender: UIScrollView) => void): void
 
 /**
  * Tells that the scroll view has ended decelerating the scrolling movement.

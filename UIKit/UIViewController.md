@@ -20,11 +20,6 @@ view: UIView
 safeAreaInsets: EdgeInsets
 
 /**
- * Creates the view that the controller manages.
- */
-loadView(): void
-
-/**
  * A Boolean value indicating whether the view is currently loaded into memory. 
  */
 viewDidLoad(): void
