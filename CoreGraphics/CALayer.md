@@ -46,7 +46,7 @@ insertSublayerAbove(layer: CALayer, above: CALayer): void
 /**
  * Replaces the specified sublayer with a different layer object.
  */
-replaceSublayer(layer: CALayer, layer2: CALayer): void
+replaceSublayer(oldLayer: CALayer, newLayer: CALayer): void
 
 /**
  * A Boolean indicating whether the layer is displayed. Animatable.
