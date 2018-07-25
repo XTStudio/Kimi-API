@@ -22,7 +22,7 @@ constructor(identifier?: string): DispatchQueue
 /**
  * create an async task.
  */
-async(asyncBlock: () => void, completed: (result?: any, error?: Error) => void): void
+async(asyncBlock: () => void): void
 
 /**
  * create an async task after seconds delay.
