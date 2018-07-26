@@ -6,7 +6,7 @@ An object that defines the properties associated with a hardware-based display.
 /**
  * Returns an object representing the current device.
  */
-static readonly currentDevice: UIDevice
+static readonly current: UIDevice
 
 /**
  * The name identifying the device.
