@@ -3,18 +3,14 @@
 You use UIAnimator create animation to UIView components. 
 
 ```typescript
-/**
- * Always use shared instance.
- */
-static readonly shared: UIAnimator
 
 /**
  * Create linear animation.
  */
-linear(duration: number, animations: () => void, completion?: (finished: boolean) => void): void
+static linear(duration: number, animations: () => void, completion?: (finished: boolean) => void): void
 
 /**
  * Create spring animation.
  */
-spring(tension: number, friction: number, animations: () => void, completion?: () => void): void
+static spring(tension: number, friction: number, animations: () => void, completion?: () => void): void
 ```
