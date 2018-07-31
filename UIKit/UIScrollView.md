@@ -91,43 +91,43 @@ scrollsToTop: boolean
 /**
  * Tells when the user scrolls the content view within the receiver.
  */
-on('didScroll', (sender: UIScrollView) => void): void
+on('didScroll', (sender: UIScrollView) => void): this
 
 /**
  * Tells when the scroll view is about to start scrolling the content.
  */
-on('willBeginDragging', (sender: UIScrollView) => void): void
+on('willBeginDragging', (sender: UIScrollView) => void): this
 
 /**
  * Tells when the user finishes scrolling the content.
  * Returns target animation end contentOffset optionally.
  */
-on('willEndDragging', (sender: UIScrollView, velocity: Point) => Point | undefined): void
+on('willEndDragging', (sender: UIScrollView, velocity: Point) => Point | undefined): this
 
 /**
  * Tells when dragging ended in the scroll view.
  */
-on('didEndDragging', (sender: UIScrollView, decelerate: boolean) => void): void
+on('didEndDragging', (sender: UIScrollView, decelerate: boolean) => void): this
 
 /**
  * Tells that the scroll view is starting to decelerate the scrolling movement.
  */
-on('willBeginDecelerating', (sender: UIScrollView) => void): void
+on('willBeginDecelerating', (sender: UIScrollView) => void): this
 
 /**
  * Tells that the scroll view is ends to decelerate the scrolling movement.
  */
-on('didEndDecelerating', (sender: UIScrollView) => void): void
+on('didEndDecelerating', (sender: UIScrollView) => void): this
 
 /**
  * Tells that the scroll view has ended decelerating the scrolling movement.
  */
-on('didEndScrollingAnimation', (sender: UIScrollView) => void): void
+on('didEndScrollingAnimation', (sender: UIScrollView) => void): this
 
 /**
  * Tells that the scroll view scrolled to the top of the content.
  */
-on('didScrollToTop', (sender: UIScrollView) => void): void
+on('didScrollToTop', (sender: UIScrollView) => void): this
 ```
 
 ## Relate

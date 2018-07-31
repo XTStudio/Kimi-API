@@ -87,27 +87,27 @@ secureTextEntry: boolean
 /**
  * Asks if editing should begin in the specified text view.
  */
-on('shouldBeginEditing', (sender: UITextView) => boolean): void
+on('shouldBeginEditing', (sender: UITextView) => boolean): this
 
 /**
  * Tells that editing of the specified text view has begun.
  */
-on('didBeginEditing', (sender: UITextView) => void): void
+on('didBeginEditing', (sender: UITextView) => void): this
 
 /**
  * Asks if editing should stop in the specified text view.
  */
-on('shouldEndEditing', (sender: UITextView) => boolean): void
+on('shouldEndEditing', (sender: UITextView) => boolean): this
 
 /**
  * Tells that editing of the specified text view has ended.
  */
-on('didEndEditing', (sender: UITextView) => void): void
+on('didEndEditing', (sender: UITextView) => void): this
 
 /**
  * Asks whether the specified text should be replaced in the text view.
  */
-on('shouldChange', (sender: UITextView, charactersInRange: Range, replacementString: string) => boolean): void
+on('shouldChange', (sender: UITextView, charactersInRange: Range, replacementString: string) => boolean): this
 ```
 
 ## Relate

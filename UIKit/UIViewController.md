@@ -52,7 +52,7 @@ viewWillLayoutSubviews(): void
 /**
  * Calls after viewWillLayoutSubviews invoke.
  */
-on('viewWillLayoutSubviews', (sender: UIViewController) => void): void
+on('viewWillLayoutSubviews', (sender: UIViewController) => void): this
 
 /**
  * Called to notify the view controller that its view has just laid out its subviews.

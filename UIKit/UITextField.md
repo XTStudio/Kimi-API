@@ -109,37 +109,37 @@ secureTextEntry: boolean
 /**
  * Asks if editing should begin in the specified text field.
  */
-on('shouldBeginEditing', (sender: UITextField) => boolean): void
+on('shouldBeginEditing', (sender: UITextField) => boolean): this
 
 /**
  * Tells that editing began in the specified text field.
  */
-on('didBeginEditing', (sender: UITextField) => void): void
+on('didBeginEditing', (sender: UITextField) => void): this
 
 /**
  * Asks if editing should stop in the specified text field.
  */
-on('shouldEndEditing', (sender: UITextField) => boolean): void
+on('shouldEndEditing', (sender: UITextField) => boolean): this
 
 /**
  * Tells that editing stopped for the specified text field.
  */
-on('didEndEditing', (sender: UITextField) => void): void
+on('didEndEditing', (sender: UITextField) => void): this
 
 /**
  * Asks if the specified text should be changed.
  */
-on('shouldChange', (sender: UITextField, charactersInRange: Range, replacementString: string) => boolean): void
+on('shouldChange', (sender: UITextField, charactersInRange: Range, replacementString: string) => boolean): this
 
 /**
  * Asks if the text field’s current contents should be removed.
  */
-on('shouldClear', (sender: UITextField) => boolean): void
+on('shouldClear', (sender: UITextField) => boolean): this
 
 /**
  * Asks if the text field should process the pressing of the return button.
  */
-on('shouldReturn', (sender: UITextField) => boolean): void
+on('shouldReturn', (sender: UITextField) => boolean): this
 ```
 
 ## Relate

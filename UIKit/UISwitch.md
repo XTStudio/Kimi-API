@@ -26,7 +26,7 @@ setOn(on: boolean, animated: boolean): void
 /**
  * Calls after on state changed by user taps.
  */
-on('valueChanged', (sender: UISwitch) => void): void
+on('valueChanged', (sender: UISwitch) => void): this
 ```
 
 ## Relate

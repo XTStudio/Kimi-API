@@ -53,27 +53,27 @@ deselectItem(indexPath: UIIndexPath, animated: boolean): void
 /** 
  * Tells your data source object for the number of sections in the collection view.
  */
-on('numberOfSections', () => number): void
+on('numberOfSections', () => number): this
 
 /** 
  * Tells your data source object for the number of items in the specified section.
  */
-on('numberOfItems', (inSection: number) => number): void
+on('numberOfItems', (inSection: number) => number): this
 
 /** 
  * Tells your data source object for the cell that corresponds to the specified item in the collection view.
  */
-on('cellForItem', (indexPath: UIIndexPath) => UICollectionViewCell): void
+on('cellForItem', (indexPath: UIIndexPath) => UICollectionViewCell): this
 
 /** 
  * Tells the delegate that the item at the specified index path was selected.
  */
-on('didSelectItem', (indexPath: UIIndexPath, cell: UICollectionViewCell) => void): void
+on('didSelectItem', (indexPath: UIIndexPath, cell: UICollectionViewCell) => void): this
 
 /** 
  * Tells the delegate that the item at the specified path was deselected.
  */
-on('didDeselectItem', (indexPath: UIIndexPath, cell: UICollectionViewCell) => void): void
+on('didDeselectItem', (indexPath: UIIndexPath, cell: UICollectionViewCell) => void): this
 ```
 
 ## UICollectionViewCell extends UIView
@@ -100,12 +100,12 @@ readonly reuseIdentifier: string | undefined
 /** 
  * Calls after cell select state change.
  */
-on('selected', (sender: UITableViewCell, selected: boolean) => void): void
+on('selected', (sender: UITableViewCell, selected: boolean) => void): this
 
 /** 
  * Calls after cell highlight state change.
  */
-on('highlighted', (sender: UITableViewCell, highlighted: boolean) => void): void
+on('highlighted', (sender: UITableViewCell, highlighted: boolean) => void): this
 ```
 
 ## UICollectionViewLayout
@@ -168,32 +168,32 @@ scrollDirection: UICollectionViewScrollDirection = .vertical
 /** 
  * Tells the delegate for the size of the specified item’s cell.
  */
-on('sizeForItem', (indexPath: UIIndexPath) => Size): void
+on('sizeForItem', (indexPath: UIIndexPath) => Size): this
 
 /** 
  * Tells the delegate for the margins to apply to content in the specified section.
  */
-on('insetForSection', (inSection: number) => EdgeInsets): void
+on('insetForSection', (inSection: number) => EdgeInsets): this
 
 /** 
  * Tells the delegate for the spacing between successive rows or columns of a section.
  */
-on('minimumLineSpacing', (inSection: number) => number): void
+on('minimumLineSpacing', (inSection: number) => number): this
 
 /** 
  * Tells the delegate for the spacing between successive items in the rows or columns of a section.
  */
-on('minimumInteritemSpacing', (inSection: number) => number): void
+on('minimumInteritemSpacing', (inSection: number) => number): this
 
 /** 
  * Tells the delegate for the size of the header view in the specified section.
  */
-on('referenceSizeForHeader', (inSection: number) => Size): void
+on('referenceSizeForHeader', (inSection: number) => Size): this
 
 /** 
  * Tells the delegate for the size of the footer view in the specified section.
  */
-on('referenceSizeForFooter', (inSection: number) => Size): void
+on('referenceSizeForFooter', (inSection: number) => Size): this
 ```
 
 ## UICollectionViewScrollDirection

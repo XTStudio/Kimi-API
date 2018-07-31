@@ -56,20 +56,20 @@ evaluateJavaScript(script: string, completed: (result?: any, error?: Error) => v
 /**
  * Tells the delegate if a new request should be accepted.
  */
-on('newRequest', (request: URLRequest) => boolean): void
+on('newRequest', (request: URLRequest) => boolean): this
 
 /**
  * Calls after web page start loading.
  */
-on('didStart', () => void): void
+on('didStart', () => void): this
 
 /**
  * Calls after web page finish loading.
  */
-on('didFinish', () => void): void
+on('didFinish', () => void): this
 
 /**
  * Calls after web page fail to load.
  */
-on('didFail', (error: Error) => void): void
+on('didFail', (error: Error) => void): this
 ```

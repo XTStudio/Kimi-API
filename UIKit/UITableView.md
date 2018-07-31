@@ -61,52 +61,52 @@ deselectRow(indexPath: UIIndexPath, animated: boolean): void
 /**
  * Tells the data source to return the number of sections in the table view.
  */
-on('numberOfSections', () => number): void
+on('numberOfSections', () => number): this
 
 /**
  * Tells the data source to return the number of rows in a given section of a table view.
  */
-on('numberOfRows', (inSection: number) => number): void
+on('numberOfRows', (inSection: number) => number): this
 
 /**
  * Tells the delegate for the height to use for a row in a specified location.
  */
-on('heightForRow', (indexPath: UIIndexPath) => number): void
+on('heightForRow', (indexPath: UIIndexPath) => number): this
 
 /**
  * Tells the data source for a cell to insert in a particular location of the table view.
  */
-on('cellForRow', (indexPath: UIIndexPath) => UITableViewCell): void
+on('cellForRow', (indexPath: UIIndexPath) => UITableViewCell): this
 
 /**
  * Tells the delegate for a view object to display in the header of the specified section of the table view.
  */
-on('viewForHeader', (inSection: number) => UIView | undefined): void
+on('viewForHeader', (inSection: number) => UIView | undefined): this
 
 /**
  * Tells the delegate for the height to use for the header of a particular section.
  */
-on('heightForHeader', (inSection: number) => number): void
+on('heightForHeader', (inSection: number) => number): this
 
 /**
  * Tells the delegate for a view object to display in the footer of the specified section of the table view.
  */
-on('viewForFooter', (inSection: number) => UIView | undefined): void
+on('viewForFooter', (inSection: number) => UIView | undefined): this
 
 /**
  * Tells the delegate for the height to use for the footer of a particular section.
  */
-on('heightForFooter', (inSection: number) => number): void
+on('heightForFooter', (inSection: number) => number): this
 
 /**
  * Tells the delegate that the specified row is now selected.
  */
-on('didSelectRow', (indexPath: UIIndexPath, cell: UITableViewCell) => void): void
+on('didSelectRow', (indexPath: UIIndexPath, cell: UITableViewCell) => void): this
 
 /**
  * Tells the delegate that the specified row is now deselected.
  */
-on('didDeselectRow', (indexPath: UIIndexPath, cell: UITableViewCell) => void): void
+on('didDeselectRow', (indexPath: UIIndexPath, cell: UITableViewCell) => void): this
 ```
 
 # UIKit | UITableViewCell extends UIView
@@ -138,12 +138,12 @@ hasSelectionStyle: boolean = true
 /**
  * Calls after cell select state change.
  */
-on('selected', (sender: UITableViewCell, selected: boolean, animated: boolean) => void): void
+on('selected', (sender: UITableViewCell, selected: boolean, animated: boolean) => void): this
 
 /**
  * Calls after cell highlight state change.
  */
-on('highlighted', (sender: UITableViewCell, highlighted: boolean, animated: boolean) => void): void
+on('highlighted', (sender: UITableViewCell, highlighted: boolean, animated: boolean) => void): this
 ```
 
 ## Relate

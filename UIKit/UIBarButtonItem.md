@@ -37,7 +37,7 @@ customView: UIView | undefined
 /**
  * Call after user tap bar button.
  */
-on('touchUpInside', (sender: UIBarButtonItem): void): void
+on('touchUpInside', (sender: UIBarButtonItem) => void): this
 
 ```
 

@@ -86,7 +86,7 @@ numberOfTouchesRequired: number = 1
 /**
  * You use touch event to handle tap.
  */
-on('touch', (sender: UITapGestureRecognizer) => void): void
+on('touch', (sender: UITapGestureRecognizer) => void): this
 ```
 
 ## UILongPressGestureRecognizer: UIGestureRecognizer
@@ -116,22 +116,22 @@ allowableMovement: number = 10
 /**
  * You use began event to handle a LongPressGesture began.
  */
-on('began', (sender: UILongPressGestureRecognizer) => void): void
+on('began', (sender: UILongPressGestureRecognizer) => void): this
 
 /**
  * You use changed event to handle a LongPressGesture moved(finger move).
  */
-on('changed', (sender: UILongPressGestureRecognizer) => void): void
+on('changed', (sender: UILongPressGestureRecognizer) => void): this
 
 /**
  * You use ended event to handle a LongPressGesture ended(finger up).
  */
-on('ended', (sender: UILongPressGestureRecognizer) => void): void
+on('ended', (sender: UILongPressGestureRecognizer) => void): this
 
 /**
  * You use cancelled event to handle a LongPressGesture was cancelled by another responder.
  */
-on('cancelled', (sender: UILongPressGestureRecognizer) => void): void
+on('cancelled', (sender: UILongPressGestureRecognizer) => void): this
 ```
 
 ## UIPanGestureRecognizer: UIGestureRecognizer
@@ -165,22 +165,22 @@ velocityInView:(view?: UIView): Point
 /**
  * You use began event to handle a PanGesture began.
  */
-on('began', (sender: UIPanGestureRecognizer) => void): void
+on('began', (sender: UIPanGestureRecognizer) => void): this
 
 /**
  * You use changed event to handle a PanGesture moved(finger move).
  */
-on('changed', (sender: UIPanGestureRecognizer) => void): void
+on('changed', (sender: UIPanGestureRecognizer) => void): this
 
 /**
  * You use ended event to handle a PanGesture ended(finger up).
  */
-on('ended', (sender: UIPanGestureRecognizer) => void): void
+on('ended', (sender: UIPanGestureRecognizer) => void): this
 
 /**
  * You use cancelled event to handle a PanGesture was cancelled by another responder.
  */
-on('cancelled', (sender: UIPanGestureRecognizer) => void): void
+on('cancelled', (sender: UIPanGestureRecognizer) => void): this
 ```
 
 ## UIPinchGestureRecognizer: UIGestureRecognizer
@@ -199,22 +199,22 @@ readonly velocity: number
 /**
  * You use began event to handle a PinchGesture began.
  */
-on('began', (sender: UIPinchGestureRecognizer) => void): void
+on('began', (sender: UIPinchGestureRecognizer) => void): this
 
 /**
  * You use changed event to handle a PinchGesture moved(fingers move).
  */
-on('changed', (sender: UIPinchGestureRecognizer) => void): void
+on('changed', (sender: UIPinchGestureRecognizer) => void): this
 
 /**
  * You use ended event to handle a PinchGesture ended(fingers up).
  */
-on('ended', (sender: UIPinchGestureRecognizer) => void): void
+on('ended', (sender: UIPinchGestureRecognizer) => void): this
 
 /**
  * You use cancelled event to handle a PinchGesture was cancelled by another responder.
  */
-on('cancelled', (sender: UIPinchGestureRecognizer) => void): void
+on('cancelled', (sender: UIPinchGestureRecognizer) => void): this
 ```
 
 ## UIRotationGestureRecognizer: UIGestureRecognizer
@@ -233,22 +233,22 @@ readonly velocity: number
 /**
  * You use began event to handle a RotateGesture began.
  */
-on('began', (sender: UIRotationGestureRecognizer) => void): void
+on('began', (sender: UIRotationGestureRecognizer) => void): this
 
 /**
  * You use changed event to handle a RotateGesture moved(fingers move).
  */
-on('changed', (sender: UIRotationGestureRecognizer) => void): void
+on('changed', (sender: UIRotationGestureRecognizer) => void): this
 
 /**
  * You use ended event to handle a RotateGesture ended(fingers up).
  */
-on('ended', (sender: UIRotationGestureRecognizer) => void): void
+on('ended', (sender: UIRotationGestureRecognizer) => void): this
 
 /**
  * You use cancelled event to handle a RotateGesture was cancelled by another responder.
  */
-on('cancelled', (sender: UIRotationGestureRecognizer) => void): void
+on('cancelled', (sender: UIRotationGestureRecognizer) => void): this
 ```
 
 ## Relate

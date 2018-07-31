@@ -87,47 +87,47 @@ imageEdgeInsets: EdgeInsets
 /**
  * You use touchDown event to handle touch-down event in the control.
  */
-on('touchDown', (sender: UIButton) => void): void
+on('touchDown', (sender: UIButton) => void): this
 
 /**
  * You use touchDown event to handle repeated touch-down event in the control.
  */
-on('touchDownRepeat', (sender: UIButton) => void): void
+on('touchDownRepeat', (sender: UIButton) => void): this
 
 /**
  * You use touchDown event to handle a finger is dragged inside the bounds of the control.
  */
-on('touchDragInside', (sender: UIButton) => void): void
+on('touchDragInside', (sender: UIButton) => void): this
 
 /**
  * You use touchDown event to handle a finger is dragged just outside the bounds of the control.
  */
-on('touchDragOutside', (sender: UIButton) => void): void
+on('touchDragOutside', (sender: UIButton) => void): this
 
 /**
  * You use touchDown event to handle a finger is dragged into the bounds of the control. 
  */
-on('touchDragEnter', (sender: UIButton) => void): void
+on('touchDragEnter', (sender: UIButton) => void): this
 
 /**
  * You use touchDown event to handle a finger is dragged from within a control to outside its bounds.
  */
-on('touchDragExit', (sender: UIButton) => void): void
+on('touchDragExit', (sender: UIButton) => void): this
 
 /**
  * You use touchDown event to handle a touch-up event in the control where the finger is inside the bounds of the control.
  */
-on('touchUpInside', (sender: UIButton) => void): void
+on('touchUpInside', (sender: UIButton) => void): this
 
 /**
  * You use touchDown event to handle a touch-up event in the control where the finger is outside the bounds of the control.
  */
-on('touchUpOutside', (sender: UIButton) => void): void
+on('touchUpOutside', (sender: UIButton) => void): this
 
 /**
  * You use touchDown event to handle a system event canceling the current touches for the control.
  */
-on('touchCancel', (sender: UIButton) => void): void
+on('touchCancel', (sender: UIButton) => void): this
 ```
 
 ## Relate

@@ -41,7 +41,7 @@ setValue(value: number, animated: boolean): void
 /**
  * Calls after value changed by user drags.
  */
-on('valueChanged', (sender: UISlider) => void): void
+on('valueChanged', (sender: UISlider) => void): this
 ```
 
 ## Relate

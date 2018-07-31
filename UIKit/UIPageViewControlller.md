@@ -38,16 +38,16 @@ scrollToPreviousPage(animated?: boolean = true): void
 /**
  * Returns the view controller before the given view controller.
  */
-on('beforeViewController', (currentPage: UIViewController) => UIViewController | undefined): void
+on('beforeViewController', (currentPage: UIViewController) => UIViewController | undefined): this
 
 /**
  * Returns the view controller after the given view controller.
  */
-on('afterViewController', (currentPage: UIViewController) => UIViewController | undefined): void
+on('afterViewController', (currentPage: UIViewController) => UIViewController | undefined): this
 
 /**
  * Called after a gesture-driven transition completes.
  */
-on('didFinishAnimating', (currentPage: UIViewController, previousPages: UIViewController[]) => void): void
+on('didFinishAnimating', (currentPage: UIViewController, previousPages: UIViewController[]) => void): this
 
 ```
