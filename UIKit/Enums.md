@@ -4,9 +4,9 @@
 
 ```typescript
 enum UIViewContentMode {
-  scaleToFill
-  scaleAspectFit
-  scaleAspectFill
+  scaleToFill,
+  scaleAspectFit,
+  scaleAspectFill,
 }
 ```
 
@@ -47,9 +47,9 @@ enum UIControlContentVerticalAlignment {
 
 ```typescript
 enum UITextAlignment {
-  left
-  center
-  right
+  left,
+  center,
+  right,
 }
 ```
 
@@ -57,12 +57,12 @@ enum UITextAlignment {
 
 ```typescript
 enum UILineBreakMode {
-  wordWrapping
-  charWrapping
-  clipping
-  truncatingHead
-  truncatingTail
-  truncatingMiddle
+  wordWrapping,
+  charWrapping,
+  clipping,
+  truncatingHead,
+  truncatingTail,
+  truncatingMiddle,
 }
 ```
 
@@ -70,10 +70,10 @@ enum UILineBreakMode {
 
 ```typescript
 enum UITextFieldViewMode {
-  never
-  whileEditing
-  unlessEditing
-  always
+  never,
+  whileEditing,
+  unlessEditing,
+  always,
 }
 ```
 
@@ -113,7 +113,7 @@ enum UITextSpellCheckingType {
 ```typescript
 enum UIKeyboardType {
   default,
-  ASCIICapable
+  ASCIICapable,
   numbersAndPunctuation,
   numberPad,
   phonePad,
