@@ -68,6 +68,10 @@ enum URLSessionTaskState {
      */
     running,
     /**
+     * The task is currently paused.
+     */
+    suspended,
+    /**
      * The task has received a cancel message.
      */
     cancelling,
