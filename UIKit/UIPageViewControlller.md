@@ -13,7 +13,7 @@ constructor(isVertical?: boolean)
  * If page-items setted, and loops sets to true, the page-viewcontroller enters infinite loops mode.
  * eg: when user scroll to last page, the next page is the page-items first page.
  */
-loops: number = false
+loops: boolean = false
 
 /**
  * Set static items for page-viewcontroller.
