@@ -30,6 +30,11 @@ static readonly cacheDirectory: string
 static readonly temporaryDirectory: string
 
 /**
+ * Returns the JavaScript Bundle directory.
+ */
+static readonly jsBundleDirectory: string
+
+/**
  * Returns an array of strings identifying the paths for all items in the specified directory.
  * If deepSearch as true, performs a deep enumeration of the specified directory and returns the paths of all of the contained subdirectories.
  */
