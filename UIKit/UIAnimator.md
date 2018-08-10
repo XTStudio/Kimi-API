@@ -1,4 +1,4 @@
-# UIKIt | UIAnimator
+# UIKit | UIAnimator
 
 You use UIAnimator create animation to UIView components. 
 
