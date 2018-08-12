@@ -66,6 +66,7 @@ Construct and manage a graphical, event-driven user interface for your app.
 * [UIViewController](UIKit/UIViewController.md)
 * [UINavigationController](UIKit/UINavigationController.md)
 * [UINavigationBar](UIKit/UINavigationBar.md)
+* [UINavigationItem](UIKit/UINavigationItem.md)
 * [UIBarButtonItem](UIKit/UIBarButtonItem.md)
 * [UITabBarController](UIKit/UITabBarController.md)
 * [UITabBar](UIKit/UITabBar.md)
