@@ -100,12 +100,12 @@ readonly reuseIdentifier: string | undefined
 /** 
  * Calls after cell select state change.
  */
-on('selected', (sender: UITableViewCell, selected: boolean) => void): this
+on('selected', (sender: UICollectionViewCell, selected: boolean) => void): this
 
 /** 
  * Calls after cell highlight state change.
  */
-on('highlighted', (sender: UITableViewCell, highlighted: boolean) => void): this
+on('highlighted', (sender: UICollectionViewCell, highlighted: boolean) => void): this
 ```
 
 ## UICollectionViewLayout
