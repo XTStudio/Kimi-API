@@ -35,7 +35,7 @@ enum UIControlContentVerticalAlignment {
 ## UIControlContentHorizontalAlignment
 
 ```typescript
-enum UIControlContentVerticalAlignment {
+enum UIControlContentHorizontalAlignment {
   center,
   left,
   right,
