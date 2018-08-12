@@ -48,6 +48,6 @@ on('afterViewController', (currentPage: UIViewController) => UIViewController | 
 /**
  * Called after a gesture-driven transition completes.
  */
-on('didFinishAnimating', (currentPage: UIViewController, previousPage: UIViewController]) => void): this
+on('didFinishAnimating', (currentPage: UIViewController, previousPage: UIViewController) => void): this
 
 ```
