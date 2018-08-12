@@ -16,7 +16,7 @@ contentSize: Size
 /**
  * The custom distance that the content view is inset from the safe area or scroll view edges.
  */
-contentInset: EdgeInset
+contentInset: EdgeInsets
 
 /**
  * A Boolean value that determines whether scrolling is disabled in a particular direction.
@@ -133,4 +133,4 @@ on('didScrollToTop', (sender: UIScrollView) => void): this
 ## Relate
 
 * [Apple Document](https://developer.apple.com/documentation/uikit/uiscrollviewdelegate?language=objc)
-* [Point / Size / EdgeInset / Rect](Interfaces.md)
+* [Point / Size / EdgeInsets / Rect](Interfaces.md)
