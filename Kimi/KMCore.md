@@ -7,6 +7,6 @@ An object that represents KIMI library informations.
 /**
  * A version identifier, obeys semver @see https://semver.org .
  */
-version: string
+static version: string
 
 ```
