@@ -18,6 +18,12 @@ All objects extends [EventEmitter](https://github.com/Olical/EventEmitter), that
 
 Kimi will not accept null as argument and return value, optional value will be ```undefined```.
 
+## Kimi
+
+Access Kimi APIs.
+
+* [KMCore](Kimi/KMCore.md)
+
 ## Foundation
 
 Access essential data types, collections, and operating-system services to define the base layer of functionality for your app.
@@ -64,6 +70,7 @@ Construct and manage a graphical, event-driven user interface for your app.
 ### View Controllers
 
 * [UIViewController](UIKit/UIViewController.md)
+* [UINavigationBarViewController](UIKit/UINavigationBarViewController.md)
 * [UINavigationController](UIKit/UINavigationController.md)
 * [UINavigationBar](UIKit/UINavigationBar.md)
 * [UINavigationItem](UIKit/UINavigationItem.md)
