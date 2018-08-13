@@ -10,6 +10,11 @@ An object that manages a NaviBar as UIView and a view hierarchy for your UIKit a
 navigationBarContentHeight: number
 
 /**
+ * Let navigation bar layout in front of content view.
+ */
+navigationBarInFront: boolean
+
+/**
  * Gets the navigation bar instance.
  */
 navigationBar: UIView
