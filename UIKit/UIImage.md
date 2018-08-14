@@ -35,7 +35,7 @@ An object that manages image data in your app.
  * base64 - Use a base64 string to decode image.
  * renderingMode - Specifies the possible rendering modes for an image.
  */
-constructor({name?: string, base64?: string, renderingMode?: UIImageRenderingMode})
+constructor({name?: string, base64?: string, data?: Data, renderingMode?: UIImageRenderingMode})
 
 /**
  * The logical dimensions of the image, measured in points.
