@@ -60,6 +60,8 @@ Construct and manage a graphical, event-driven user interface for your app.
 * [UICollectionView & UICollectionViewLayout & UICollectionViewCell](UIKit/UICollectionView.md)
 * [UITableView & UITableViewCell](UIKit/UITableView.md)
 * [UIScrollView](UIKit/UIScrollView.md)
+* [UIRefreshControl](UIKit/UIRefreshControl.md)
+* [UIFetchMoreControl](UIKit/UIFetchMoreControl.md)
 * [UIAlert & UIPrompt & UIConfirm](UIKit/UIDialogs.md)
 * [UIActivityIndicatorView](UIKit/UIActivityIndicatorView.md)
 * [UISwitch](UIKit/UISwitch.md)
