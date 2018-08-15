@@ -7,7 +7,7 @@ The backdrop for your app’s user interface and the object that dispatches even
 /** 
  * The root view controller for the window.
  */
-rootViewController: UIViewController?
+rootViewController: UIViewController | undefined
 
 /** 
  * The root view controller for the window.
