@@ -66,6 +66,7 @@ Construct and manage a graphical, event-driven user interface for your app.
 * [UIActivityIndicatorView](UIKit/UIActivityIndicatorView.md)
 * [UISwitch](UIKit/UISwitch.md)
 * [UISlider](UIKit/UISlider.md)
+* [UIProgressView](UIKit/UIProgressView.md)
 * [UIWebView](UIKit/UIWebView.md)
 * [UIStackView](UIKit/UIStackView.md)
 
