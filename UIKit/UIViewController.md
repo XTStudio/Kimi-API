@@ -129,6 +129,16 @@ readonly tabBarController: UITabBarController
  */
 readonly tabBarItem: UITabBarItem
 
+/**
+ * Trigger when soft keyboard will show.
+ */
+on("keyboardWillShow", (keyboardRect: Rect, animationDuration: number) => void): void
+
+/**
+ * Trigger when soft keyboard will show.
+ */
+on("keyboardWillHide", (animationDuration: number) => void): void
+
 ```
 
 ## Relate
