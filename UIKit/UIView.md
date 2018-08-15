@@ -239,6 +239,11 @@ accessibilityValue: string
  */
 accessibilityIdentifier: string
 
+/** 
+ * Make all focus text input blur.
+ */
+endEditing(): void
+
 ```
 
 ## Relates

@@ -9,9 +9,4 @@ The backdrop for your app’s user interface and the object that dispatches even
  */
 rootViewController: UIViewController | undefined
 
-/** 
- * The root view controller for the window.
- */
-endEditing(): void
-
 ```
