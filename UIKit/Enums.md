@@ -165,3 +165,12 @@ enum UIStackViewAlignment {
   trailing,
 }
 ```
+
+## UIStatusBarStyle
+
+```typescript
+enum UIStatusBarStyle {
+  default,
+  lightContent,
+}
+```

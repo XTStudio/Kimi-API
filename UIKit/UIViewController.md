@@ -129,6 +129,11 @@ readonly tabBarController: UITabBarController
  */
 readonly tabBarItem: UITabBarItem
 
+/** 
+ * Update the current view controller statusBar style.
+ */
+setNeedsStatusBarAppearanceUpdate(): void
+
 /**
  * Trigger when soft keyboard will show.
  */
@@ -139,6 +144,11 @@ on("keyboardWillShow", (keyboardRect: Rect, animationDuration: number) => void):
  */
 on("keyboardWillHide", (animationDuration: number) => void): void
 
+/**
+ * Returns the current view controller statusBarStyle
+ */
+on("statusBarStyle", () => UIStatusBarStyle): void
+
 ```
 
 ## Relate
@@ -148,3 +158,4 @@ on("keyboardWillHide", (animationDuration: number) => void): void
 * [UINavigationItem](UINavigationItem.md)
 * [UITabBarController](UITabBarController.md)
 * [UITabBarItem](UITabBarItem.md)
+* [UIStatusBarStyle](Enums.md)
