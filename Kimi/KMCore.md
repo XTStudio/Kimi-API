@@ -7,11 +7,11 @@ An object that represents KIMI library informations.
 /**
  * A version identifier, obeys semver @see https://semver.org .
  */
-static version: string
+static readonly version: string
 
 /**
  * A version identifier provides by host application, iOS is short version defines in Info.plist, Android is versionName in build.gradle.
  */
-static hostVersion: string
+static readonly hostVersion: string
 
 ```
