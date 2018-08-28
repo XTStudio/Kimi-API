@@ -174,6 +174,11 @@ alpha: number
 hidden: boolean
 
 /**
+ * A Boolean value that determines whether the view contents opaque, this parameters cause a performance improvement.
+ */
+opaque: boolean
+
+/**
  * A flag used to determine how a view lays out its content when its bounds change.
  */
 contentMode: UIViewContentMode
