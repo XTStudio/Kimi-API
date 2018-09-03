@@ -72,4 +72,9 @@ on('didFinish', () => void): this
  * Calls after web page fail to load.
  */
 on('didFail', (error: Error) => void): this
+
+/**
+ * Calls after webview post message to application using 'KIMI.postMessage(message, handler:() => void)'.
+ */
+on('message', (message: string, callback?: (...arguments: any[]) => void) => void): this
 ```
