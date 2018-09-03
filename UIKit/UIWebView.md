@@ -76,5 +76,5 @@ on('didFail', (error: Error) => void): this
 /**
  * Calls after webview post message to application using 'KIMI.postMessage(message, handler:() => void)'.
  */
-on('message', (message: string) => any): this
+on('message', (message: string) => string | undefined): this
 ```
