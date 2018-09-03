@@ -22,6 +22,11 @@ setViewControllers(viewControllers: UIViewController[], animated?: boolean): voi
  */
 readonly tabBar: UITabBar
 
+/**
+ * Trigger when UITabBar did touch, whatever selected.
+ */
+on("onSelectedViewController", (sender: UITabBarController, repeat: boolean) => void): void
+
 ```
 
 ## Relate
