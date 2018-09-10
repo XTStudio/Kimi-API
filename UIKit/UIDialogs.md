@@ -71,3 +71,27 @@ cancelTitle: string = "No"
  */
 show(completed?: () => void, cancelled?: () => void): void
 ```
+
+## UIActionSheet
+
+```typescript
+/**
+ * Add regular action button to actionsheet.
+ */
+addRegularAction(title: string, acitonBlock:() => void): void
+
+/**
+ * Add danegr action (red title) button to actionsheet.
+ */
+addDangerAction(title: string, acitonBlock:() => void): void
+
+/**
+ * Add cancel action button to actionsheet.
+ */
+addCancelAction(title: string, acitonBlock:() => void): void
+
+/**
+ * Shows the dialog.
+ */
+show(): void
+```
