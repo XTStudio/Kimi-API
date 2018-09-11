@@ -75,6 +75,12 @@ show(completed?: () => void, cancelled?: () => void): void
 ## UIActionSheet
 
 ```typescript
+
+/**
+ * The message text at top.
+ */
+message: string
+
 /**
  * Add regular action button to actionsheet.
  */
