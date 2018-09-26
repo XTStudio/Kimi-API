@@ -101,3 +101,19 @@ addCancelAction(title: string, acitonBlock:() => void): void
  */
 show(): void
 ```
+
+## UIMenu
+
+```typescript
+
+/**
+ * Add menu item with action to menu controller.
+ */
+addMenuItem(title: string, actionBlock:() => void): void
+
+/**
+ * Shows the menu.
+ */
+show(inView: UIView): void
+
+```
