@@ -37,6 +37,11 @@ center: Point
  */
 transform: AffineTransform
 
+/**
+ * Assign a insets value to the view, system could recognize touches over the bounds.
+ */
+touchAreaInsets: EdgeInsets
+
 // Hierarchy
 
 /**
