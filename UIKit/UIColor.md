@@ -16,6 +16,13 @@ static readonly blue: UIColor
 static readonly white: UIColor
 
 /**
+ * Returns a color object using the specified opacity and RGB / ARGB hex values. 
+ * eg: #ffffff means white color.
+ * eg: #ffff0000 means red color with 1.0 alpha.
+ */
+static hexColor(hexValue: string): UIColor
+
+/**
  * Creates and returns a color object using the specified opacity and RGB component values. 
  */
 constructor(r: number, g: number, b: number, a: number): UIColor

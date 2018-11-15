@@ -1,8 +1,8 @@
-# Kimi-API
+# API
 
-Kimi is a framework exposes iOS / Android / Web features.
+XT framework exposes iOS / Android / Web features.
 
-Kimi including following framework subsets now.
+includes the following frameworks.
 
 * Foundation
 * UIKit
@@ -18,9 +18,9 @@ All objects extends [EventEmitter](https://github.com/Olical/EventEmitter), that
 
 Kimi will not accept null as argument and return value, optional value will be ```undefined```.
 
-## Kimi
+## KIMI
 
-Access Kimi APIs.
+Access KIMI APIs.
 
 * [KMCore](Kimi/KMCore.md)
 

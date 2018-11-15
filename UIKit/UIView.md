@@ -65,6 +65,11 @@ readonly subviews: UIView[]
 readonly window: UIWindow | undefined
 
 /**
+ * The receiver’s view controller object, or nil if it has none.
+ */
+readonly viewController: UIViewController
+
+/**
  * Unlinks the view from its superview and its window, and removes it from the responder chain.
  */
 removeFromSuperview(): void
