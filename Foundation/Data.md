@@ -21,7 +21,7 @@ constructor(value?: ArrayBuffer | {
 arrayBuffer(): ArrayBuffer
 
 /**
- * Returns a json object, otherwise returns undefined if it's not an utf8 string encoding data or parse error.
+ * Parse data as JSON and return object, otherwise returns undefined if it's not an utf8 string encoding data or parse error.
  */
 json(): any | undefined
 
