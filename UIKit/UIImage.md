@@ -46,4 +46,9 @@ readonly size: Size
  * The scale factor of the image.
  */
 readonly scale: number
+
+/**
+ * Call after image loaded, only valid on Web Platform.
+ */
+on('load', () => void): this
 ```

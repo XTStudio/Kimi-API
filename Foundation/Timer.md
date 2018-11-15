@@ -4,6 +4,8 @@ A timer that fires after a certain time interval has elapsed, sending a specifie
 
 ```typescript
 
+static sleep(timeInterval: number): Promise<any>
+
 /**
  * Creates a timer and schedules it on the current run loop in the default mode, you may set it repeats or not.
  */

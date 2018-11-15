@@ -12,9 +12,14 @@ An object that coordinates a group of related network data transfer tasks.
 static readonly shared: URLSession
 
 /**
+ * Creates a task that retrieves the contents of the specified URLString or URL or URLRequest, returns a Promise object, task will resume immediately.
+ */
+fetch(request: string | URL | URLRequest): Promise<Data>
+
+/**
  * Creates a task that retrieves the contents of the specified URLString or URL or URLRequest, then calls a handler upon completion.
  */
-dataTask(req: string | URL | URLRequest, complete: (data?: Data, response?: URLResponse, error?: Error) => void): URLSessionTask
+dataTask(request: string | URL | URLRequest, complete: (data?: Data, response?: URLResponse, error?: Error) => void): URLSessionTask
 
 ```
 
