@@ -67,7 +67,7 @@ readonly window: UIWindow | undefined
 /**
  * The receiver’s view controller object, or nil if it has none.
  */
-readonly viewController: UIViewController
+readonly viewController: UIViewController | undefined
 
 /**
  * Unlinks the view from its superview and its window, and removes it from the responder chain.
