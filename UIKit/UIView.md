@@ -50,7 +50,7 @@ convertPointToView(point: UIPoint, toView: UIView): UIPoint
 /**
  * Converts a point from the coordinate system of a given view to that of the view.
  */
-convertPointFromView(point: UIPoint, toView: UIView): UIPoint
+convertPointFromView(point: UIPoint, fromView: UIView): UIPoint
 
 /**
  * Converts a rectangle from the view’s coordinate system to that of another view.
@@ -60,7 +60,7 @@ convertRectToView(point: UIRect, toView: UIView): UIRect
 /**
  * Converts a rectangle from the coordinate system of another view to that of the view.
  */
-convertRectFromView(point: UIRect, toView: UIView): UIRect
+convertRectFromView(point: UIRect, fromView: UIView): UIRect
 
 // Hierarchy
 
